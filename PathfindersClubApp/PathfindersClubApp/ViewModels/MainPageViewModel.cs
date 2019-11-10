@@ -15,5 +15,12 @@ namespace PathfindersClubApp.ViewModels
         {
             Title = "Main Page";
         }
+
+        private string _imageButtonAbout = "imagemButtonAboutMainPage.png";
+
+        public string ImageButtonAbout
+        {
+            get { return _imageButtonAbout; }
+        }
     }
 }

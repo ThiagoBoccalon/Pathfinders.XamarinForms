@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.iOS\\PathfindersClubApp.iOS.csproj": {}
+    "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp.iOS\\PathfindersClubApp.iOS.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.iOS\\PathfindersClubApp.iOS.csproj": {
+    "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp.iOS\\PathfindersClubApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.iOS\\PathfindersClubApp.iOS.csproj",
+        "projectUniqueName": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp.iOS\\PathfindersClubApp.iOS.csproj",
         "projectName": "PathfindersClubApp.iOS",
-        "projectPath": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.iOS\\PathfindersClubApp.iOS.csproj",
+        "projectPath": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp.iOS\\PathfindersClubApp.iOS.csproj",
         "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.iOS\\obj\\",
+        "outputPath": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj": {
-                "projectPath": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj"
+              "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj": {
+                "projectPath": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj"
               }
             }
           }
@@ -46,9 +46,17 @@
               "target": "Package",
               "version": "[7.2.0.1367, )"
             },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[3.6.0.344457, )"
+              "version": "[4.3.0.947036, )"
+            },
+            "Xamarin.HotReload": {
+              "target": "Package",
+              "version": "[1.5.3, )"
             }
           }
         }
@@ -65,14 +73,14 @@
         }
       }
     },
-    "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj": {
+    "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj",
+        "projectUniqueName": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj",
         "projectName": "PathfindersClubApp",
-        "projectPath": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj",
+        "projectPath": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj",
         "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp\\obj\\",
+        "outputPath": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -114,9 +122,17 @@
               "target": "Package",
               "version": "[7.2.0.1367, )"
             },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[3.6.0.344457, )"
+              "version": "[4.3.0.947036, )"
+            },
+            "Xamarin.HotReload": {
+              "target": "Package",
+              "version": "[1.5.3, )"
             }
           },
           "imports": [

@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using ImageCircle.Forms.Plugin.Droid;
 using Prism;
 using Prism.Ioc;
 
@@ -14,9 +15,9 @@ namespace PathfindersClubApp.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            base.OnCreate(bundle);
-
+            base.OnCreate(bundle);            
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            ImageCircleRenderer.Init();            
             LoadApplication(new App(new AndroidInitializer()));
         }
     }

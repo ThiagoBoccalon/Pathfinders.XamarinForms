@@ -19,10 +19,14 @@ namespace PathfindersClubApp
 
         public App(IPlatformInitializer initializer) : base(initializer) { }
 
+
+
         protected override async void OnInitialized()
         {
             InitializeComponent();
-
+            #if DEBUG
+                HotReloader.Current.Run(this);
+            #endif
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
