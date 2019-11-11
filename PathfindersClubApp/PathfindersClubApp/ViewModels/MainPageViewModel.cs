@@ -11,25 +11,18 @@ namespace PathfindersClubApp.ViewModels
     public class MainPageViewModel : ViewModelBase
     {
         private INavigationService _navigationService;
-
+        public DelegateCommand NavigateToAboutPageCommand { get; set; }
+        //public DelegateCommand NavigateToUnitListPageCommand { get; set; }
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Atalaia Internacional";
             _navigationService = navigationService;
-            NavigateToAboutPageCommand = new DelegateCommand(ExecuteNavigateToAboutPageCommand);
+            NavigateToAboutPageCommand = new DelegateCommand(ExecuteNavigateToAboutPage);
+            //NavigateToUnitListPageCommand = new DelegateCommand(ExecuteNavigateToUnitListPage);
         }
-
-        private string _imageButtonAbout = "imagemButtonAboutMainPage.png";
-
-        public DelegateCommand NavigateToAboutPageCommand { get; set; }
-
-        public string ImageButtonAbout
-        {
-            get { return _imageButtonAbout; }
-        }
-
-        private void ExecuteNavigateToAboutPageCommand()
+        
+        private void ExecuteNavigateToAboutPage()
         {
             try
             {
@@ -40,5 +33,17 @@ namespace PathfindersClubApp.ViewModels
                 App.Current.MainPage.DisplayAlert("Error", ex.Message, "Ok");
             }
         }
+        /*
+        private void ExecuteNavigateToUnitListPage()
+        {
+            try
+            {
+                _navigationService.NavigateAsync("UnitList");
+            }
+            catch(Exception ex)
+            {
+                App.Current.MainPage.DisplayAlert("Error", ex.Message, "Ok");
+            }            
+        }*/
     }
 }

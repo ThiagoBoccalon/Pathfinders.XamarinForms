@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj": {}
+    "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj": {}
   },
   "projects": {
-    "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj": {
+    "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj",
+        "projectUniqueName": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj",
         "projectName": "PathfindersClubApp",
-        "projectPath": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj",
+        "projectPath": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\PathfindersClubApp.csproj",
         "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\obj\\",
+        "outputPath": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -60,6 +60,10 @@
             "Xamarin.HotReload": {
               "target": "Package",
               "version": "[1.5.3, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.6.292, )"
             }
           },
           "imports": [

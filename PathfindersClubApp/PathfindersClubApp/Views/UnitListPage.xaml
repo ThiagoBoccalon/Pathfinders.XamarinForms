@@ -3,6 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="PathfindersClubApp.Views.UnitListPage">
-  
+             x:Class="PathfindersClubApp.Views.UnitListPage"
+             Title="Unidades do Clube">
+   
+    <ContentPage.Content>
+        <ScrollView Padding="30">
+            <ListView CachingStrategy="RecycleElement"
+                      BackgroundColor="Transparent"
+                      SeparatorColor="Black"
+                      Margin="0,20"
+                      ItemsSource="{Binding UnitsList}"
+                      HasUnevenRows="True"
+                      SelectedItem="{Binding SelectedUnits, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"
+                                         HeightRequest="80">
+                                <Frame CornerRadius="100">
+                                    <Image Source="{Binding ImageUnit}"
+                                           VerticalOptions="CenterAndExpand" 
+                                           HeightRequest="50"/>
+                                </Frame>
+                                <Label Text="{Binding NameUnit}" 
+                                       FontSize="30" 
+                                       TextColor="Black" 
+                                       FontFamily="{StaticResource Font-AmaticSC-Regular}"
+                                       VerticalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </ContentPage.Content>  
 </ContentPage>

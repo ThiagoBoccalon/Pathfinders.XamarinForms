@@ -69,7 +69,7 @@
                             <Button BackgroundColor="#331d76"
                                 TextColor="White"
                                 Text="Unidades"
-                                Command="{Binding NavigateToAboutPageCommand}"/>
+                                Command="{Binding NavigateToUnitListPageCommand}"/>
                         </StackLayout>
                     </Grid>
                 </Grid>
