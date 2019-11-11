@@ -34,6 +34,8 @@ namespace PathfindersClubApp
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<AboutPage, AboutPageViewModel>();
+            containerRegistry.RegisterForNavigation<UnitListPage, UnitListPageViewModel>();
         }
     }
 }

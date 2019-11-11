@@ -16,9 +16,20 @@
                 </OnPlatform>
             <!-- Fonts Styles END -->
             
-            <!-- Buttons for MainPage.xaml BEGIN -->
-            
-            <!-- Buttons for MainPage.xaml END -->            
+            <!-- MAIN PAGE STYLES BEGIN -->
+            <Style x:Key="main" TargetType="Frame">
+                <Setter Property="CornerRadius" Value="100"/>
+                <!--
+                <Setter Property="HeightRequest" Value="300" />
+                <Setter Property="WidthRequest" Value="300" />
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="IsClippedToBounds" Value="False"/>
+                <Setter Property="HasShadow" Value="False"/>
+                <Setter Property="BackgroundColor" Value="#4527a0"/>
+                -->
+            </Style>
+            <!-- MAIN PAGE STYLES END -->            
         </ResourceDictionary>
 
 	</Application.Resources>

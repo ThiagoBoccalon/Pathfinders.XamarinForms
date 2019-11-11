@@ -1,6 +1,5 @@
 D:\Git\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\android\assets\PathfindersClubApp.Android.dll
 D:\Git\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
-D:\Git\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\android\assets\ImageCircle.Forms.Plugin.dll
 D:\Git\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\android\assets\Java.Interop.dll
 D:\Git\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\android\assets\Microsoft.CodeAnalysis.CSharp.dll
 D:\Git\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\android\assets\Microsoft.CodeAnalysis.dll
