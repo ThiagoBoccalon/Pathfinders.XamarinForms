@@ -6265,6 +6265,24 @@ namespace PathfindersClubApp.Droid
 			// aapt resource value: 0x7F07013F
 			public const int tooltip_frame_light = 2131165503;
 			
+			// aapt resource value: 0x7F070140
+			public const int unit_bandeira_Brazil = 2131165504;
+			
+			// aapt resource value: 0x7F070141
+			public const int unit_bandeira_Chile = 2131165505;
+			
+			// aapt resource value: 0x7F070142
+			public const int unit_bandeira_Italy = 2131165506;
+			
+			// aapt resource value: 0x7F070143
+			public const int unit_bandeira_Malasia = 2131165507;
+			
+			// aapt resource value: 0x7F070144
+			public const int unit_bandeira_NewZealand = 2131165508;
+			
+			// aapt resource value: 0x7F070145
+			public const int unit_bandeira_USA = 2131165509;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

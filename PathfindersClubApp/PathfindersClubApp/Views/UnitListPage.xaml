@@ -5,30 +5,39 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="PathfindersClubApp.Views.UnitListPage"
              Title="Unidades do Clube">
-   
+
+    <Page.Resources>
+        <Style x:Key="test" TargetType="Label">
+            <Setter Property="FontSize" Value="Body"/>
+        </Style>
+    </Page.Resources>
     <ContentPage.Content>
         <ScrollView Padding="30">
             <ListView CachingStrategy="RecycleElement"
                       BackgroundColor="Transparent"
                       SeparatorColor="Black"
-                      Margin="0,20"
-                      ItemsSource="{Binding UnitsList}"
-                      HasUnevenRows="True"
-                      SelectedItem="{Binding SelectedUnits, Mode=TwoWay}">
+                      Margin="0,20"                      
+                      ItemsSource="{Binding Units}"
+                      HasUnevenRows="True"                      
+                      SelectedItem="{Binding SelectedUnit, Mode=TwoWay}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal"
-                                         HeightRequest="80">
-                                <Frame CornerRadius="100">
-                                    <Image Source="{Binding ImageUnit}"
-                                           VerticalOptions="CenterAndExpand" 
-                                           HeightRequest="50"/>
+                                         HeightRequest="100">
+                                <Frame CornerRadius="100" 
+                                       VerticalOptions="CenterAndExpand"
+                                       HasShadow="True">
+                                    <Image Source="{Binding Image}"                                           
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="CenterAndExpand"
+                                           HeightRequest="45"
+                                           WidthRequest="45"
+                                           />
                                 </Frame>
-                                <Label Text="{Binding NameUnit}" 
+                                <Label Text="{Binding Name}" 
                                        FontSize="30" 
-                                       TextColor="Black" 
-                                       FontFamily="{StaticResource Font-AmaticSC-Regular}"
+                                       TextColor="Black"                                        
                                        VerticalOptions="CenterAndExpand"/>
                             </StackLayout>
                         </ViewCell>

@@ -33,9 +33,11 @@ namespace PathfindersClubApp
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<AboutPage, AboutPageViewModel>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();            
             containerRegistry.RegisterForNavigation<UnitListPage, UnitListPageViewModel>();
+            containerRegistry.RegisterForNavigation<AboutClubPage, AboutClubPageViewModel>();
+            containerRegistry.RegisterForNavigation<AllUnitsPage, AllUnitsPageViewModel>();
+            containerRegistry.RegisterForNavigation<TestPage, TestPageViewModel>();
         }
     }
 }

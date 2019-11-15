@@ -4,7 +4,9 @@ using System.Text;
 
 namespace PathfindersClubApp.Models
 {
-    public class About
+    public class Conselheiro
     {
+        public string Name { get; set; }
+        public string Image { get; set; }
     }
 }

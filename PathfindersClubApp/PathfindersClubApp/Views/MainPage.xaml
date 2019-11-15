@@ -86,6 +86,7 @@
                     <Button BackgroundColor="#331d76"
                             Text="Agenda"
                             TextColor="White"
+                            Command="{Binding NaviagetToTestPageCommand}"
                             />
                 </StackLayout>
             </Grid>

@@ -4866,6 +4866,12 @@ public final class R {
     public static final int notify_panel_notification_icon_bg=0x7f07013d;
     public static final int tooltip_frame_dark=0x7f07013e;
     public static final int tooltip_frame_light=0x7f07013f;
+    public static final int unit_bandeira_brazil=0x7f070140;
+    public static final int unit_bandeira_chile=0x7f070141;
+    public static final int unit_bandeira_italy=0x7f070142;
+    public static final int unit_bandeira_malasia=0x7f070143;
+    public static final int unit_bandeira_newzealand=0x7f070144;
+    public static final int unit_bandeira_usa=0x7f070145;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

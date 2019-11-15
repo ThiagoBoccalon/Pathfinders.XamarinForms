@@ -6,10 +6,10 @@ using System.Linq;
 
 namespace PathfindersClubApp.ViewModels
 {
-    public class AboutPageViewModel : BindableBase
-    {
-        public AboutPageViewModel()
-        {
+    public class AllUnitsPageViewModel : BindableBase
+    {        
+        public AllUnitsPageViewModel()
+        {            
 
         }
     }

@@ -1196,6 +1196,12 @@ int drawable notification_tile_bg 0x7f07013c
 int drawable notify_panel_notification_icon_bg 0x7f07013d
 int drawable tooltip_frame_dark 0x7f07013e
 int drawable tooltip_frame_light 0x7f07013f
+int drawable unit_bandeira_brazil 0x7f070140
+int drawable unit_bandeira_chile 0x7f070141
+int drawable unit_bandeira_italy 0x7f070142
+int drawable unit_bandeira_malasia 0x7f070143
+int drawable unit_bandeira_newzealand 0x7f070144
+int drawable unit_bandeira_usa 0x7f070145
 int id ALT 0x7f080000
 int id CTRL 0x7f080001
 int id FUNCTION 0x7f080002

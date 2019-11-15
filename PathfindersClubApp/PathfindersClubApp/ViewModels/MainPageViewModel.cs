@@ -12,38 +12,48 @@ namespace PathfindersClubApp.ViewModels
     {
         private INavigationService _navigationService;
         public DelegateCommand NavigateToAboutPageCommand { get; set; }
-        //public DelegateCommand NavigateToUnitListPageCommand { get; set; }
+        public DelegateCommand NavigateToUnitListPageCommand { get; set; }
+        public DelegateCommand NaviagetToTestPageCommand { get; set; }
+
+
+
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Atalaia Internacional";
+            Title = "MainPage";
             _navigationService = navigationService;
-            NavigateToAboutPageCommand = new DelegateCommand(ExecuteNavigateToAboutPage);
-            //NavigateToUnitListPageCommand = new DelegateCommand(ExecuteNavigateToUnitListPage);
+            NavigateToAboutPageCommand = new DelegateCommand(ExecuteNavigateToAboutClubPage);
+            NavigateToUnitListPageCommand = new DelegateCommand(ExecuteNavigateToUnitListPage);
+            NaviagetToTestPageCommand = new DelegateCommand(ExecuteNavigateToTestPage);
         }
-        
-        private void ExecuteNavigateToAboutPage()
+
+        private void ExecuteNavigateToAboutClubPage()
         {
             try
             {
-                _navigationService.NavigateAsync("AboutPage");
+                _navigationService.NavigateAsync("AboutClubPage");
             }
             catch (Exception ex)
             {
                 App.Current.MainPage.DisplayAlert("Error", ex.Message, "Ok");
             }
         }
-        /*
+
         private void ExecuteNavigateToUnitListPage()
         {
             try
             {
-                _navigationService.NavigateAsync("UnitList");
+                _navigationService.NavigateAsync("UnitListPage");
             }
             catch(Exception ex)
             {
                 App.Current.MainPage.DisplayAlert("Error", ex.Message, "Ok");
             }            
-        }*/
+        }
+
+        private void ExecuteNavigateToTestPage()
+        {
+            _navigationService.NavigateAsync("TestPage");
+        }
     }
 }

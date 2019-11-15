@@ -10,76 +10,49 @@ namespace PathfindersClubApp.ViewModels
 {
     public class UnitListPageViewModel : BindableBase
     {
-        public List<Unit> units { get; private set; } = new List<Unit>();
-        private INavigationService _navigationService;
-
-        public Unit _selectedUnits { get; set; }
-        public Unit SelectedUnits
+        CadastroUnit cadastroUnit = new CadastroUnit();
+        public List<Unit> Units
         {
             get
             {
-                return _selectedUnits;
+                return cadastroUnit.Units;
+            }            
+        }
+        private INavigationService _navigationService;
+
+        public Unit _selectedUnit { get; set; }
+        public Unit SelectedUnit
+        {
+            get
+            {
+                return _selectedUnit;
             }
             set
             {
-                _selectedUnits = value;
+                _selectedUnit = value;
+
+                /* In Test
                 HandleSelectedItem();
+                */
+
+                SelectedUnitPage();
             }
         }
 
+        private void SelectedUnitPage()
+        {
+            _navigationService.NavigateAsync("AllUnitPage");
+        }
+        /*
         private void HandleSelectedItem()
         {
-            _navigationService.NavigateAsync(SelectedUnits.Page);
+            _navigationService.NavigateAsync(SelectedUnit.Page);
         }
+        */
         public UnitListPageViewModel(INavigationService navigationService)
         {
-            _navigationService = navigationService;
-            SetUnits();
-        }
-
-        private void SetUnits()
-        {
-            units.Add(new Unit
-            {
-                Name = "Águias",
-                Image = "",
-                Page = ""
-            });
-
-            units.Add(new Unit
-            {
-                Name = "Cangurus",
-                Image = "",
-                Page = ""
-            });
-
-            units.Add(new Unit
-            {
-                Name = "Falcões",
-                Image = "",
-                Page = ""
-            });
-
-            units.Add(new Unit
-            {
-                Name = "Pumas",
-                Image = "",
-                Page = ""
-            });
-
-            units.Add(new Unit
-            {
-                Name = "Tigres",
-                Image = "",
-                Page = ""
-            });
-
-            units.Add(new Unit
-            {
-                Name = "Tucanos",
-                Image = "",
-                Page = ""
-            });
-        }
+            _navigationService = navigationService;            
+        }     
+        
     }
 }

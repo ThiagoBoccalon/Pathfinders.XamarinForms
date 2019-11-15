@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.AboutClubPage"
+             Title="Sobre">
+    <Page.Resources>
+        <Style x:Key="AboutText" TargetType="Label">
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="CharacterSpacing" Value="3"/>
+            <Setter Property="LineHeight" Value="1.5"/>
+        </Style>
+        <Style x:Key="LabelTitle" TargetType="Label">
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontAttributes" Value="Bold"/>            
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="20">
+            <Label Text="Atalaia Internacional"                                 
+                   Style="{StaticResource LabelTitle}"
+                   />
+            <StackLayout Margin="0,20,0,0">
+                <Label x:Name="aboutIntroductionOne" Style="{StaticResource AboutText}"/>
+                <Label x:Name="aboutIntroductionTwo" Style="{StaticResource AboutText}"/>
+            </StackLayout>
+
+            <Label Text="Camporis Participados"
+                   Style="{StaticResource LabelTitle}"
+                   Margin="0,20,0,0"/>
+
+            <StackLayout >
+                <Label x:Name="camporisPaticipados"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>  
+</ContentPage>

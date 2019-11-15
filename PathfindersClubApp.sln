@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfindersClubApp", "PathfindersClubApp\PathfindersClubApp\PathfindersClubApp.csproj", "{83DBA457-2023-477F-96E3-98340CE474BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathfindersClubApp", "PathfindersClubApp\PathfindersClubApp\PathfindersClubApp.csproj", "{83DBA457-2023-477F-96E3-98340CE474BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfindersClubApp.Android", "PathfindersClubApp\PathfindersClubApp.Android\PathfindersClubApp.Android.csproj", "{946F4ECD-A8C4-4040-B878-DA294EF3223F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfindersClubApp.iOS", "PathfindersClubApp\PathfindersClubApp.iOS\PathfindersClubApp.iOS.csproj", "{75BEFD42-2E6F-4277-A83E-71E0234EF9D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAlgoritm", "TestAlgoritm\TestAlgoritm.csproj", "{2A4DFC78-1705-410B-A45B-63A8563DE89F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,30 @@ Global
 		{75BEFD42-2E6F-4277-A83E-71E0234EF9D6}.Release|iPhone.Build.0 = Release|iPhone
 		{75BEFD42-2E6F-4277-A83E-71E0234EF9D6}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{75BEFD42-2E6F-4277-A83E-71E0234EF9D6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.AppStore|Any CPU.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Release|iPhone.Build.0 = Release|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{2A4DFC78-1705-410B-A45B-63A8563DE89F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
