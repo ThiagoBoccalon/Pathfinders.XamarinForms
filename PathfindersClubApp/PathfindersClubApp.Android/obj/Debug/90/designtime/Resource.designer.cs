@@ -6264,22 +6264,22 @@ namespace PathfindersClubApp.Droid
 			public const int tooltip_frame_light = 2131165497;
 			
 			// aapt resource value: 0x7F07013A
-			public const int units_bandeira_Brazil = 2131165498;
+			public const int unit_bandeira_Brazil = 2131165498;
 			
 			// aapt resource value: 0x7F07013B
-			public const int units_bandeira_Chile = 2131165499;
+			public const int unit_bandeira_Chile = 2131165499;
 			
 			// aapt resource value: 0x7F07013C
-			public const int units_bandeira_Italy = 2131165500;
+			public const int unit_bandeira_Italy = 2131165500;
 			
 			// aapt resource value: 0x7F07013D
-			public const int units_bandeira_Malasia = 2131165501;
+			public const int unit_bandeira_Malasia = 2131165501;
 			
 			// aapt resource value: 0x7F07013E
-			public const int units_bandeira_NewZealand = 2131165502;
+			public const int unit_bandeira_NewZealand = 2131165502;
 			
 			// aapt resource value: 0x7F07013F
-			public const int units_bandeira_USA = 2131165503;
+			public const int unit_bandeira_USA = 2131165503;
 			
 			static Drawable()
 			{
