@@ -20,7 +20,7 @@ namespace PathfindersClubApp.ViewModels
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "MainPage";
+            Title = "Clube Atalaia Internacional";
             _navigationService = navigationService;
             NavigateToAboutPageCommand = new DelegateCommand(ExecuteNavigateToAboutClubPage);
             NavigateToUnitListPageCommand = new DelegateCommand(ExecuteNavigateToUnitListPage);

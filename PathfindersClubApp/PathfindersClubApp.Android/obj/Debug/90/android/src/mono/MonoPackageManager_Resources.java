@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "PathfindersClubApp.Android.dll" comes first in this list. */
 		"PathfindersClubApp.Android.dll",
 		"FormsViewGroup.dll",
+		"ImageCircle.Forms.Plugin.dll",
 		"Microsoft.CodeAnalysis.CSharp.dll",
 		"Microsoft.CodeAnalysis.dll",
 		"PathfindersClubApp.dll",

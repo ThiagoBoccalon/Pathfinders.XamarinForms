@@ -26,13 +26,13 @@ D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\bin\Deb
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\bin\Debug\netstandard2.0\PathfindersClubApp.pdb
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.csprojAssemblyReference.cache
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\AboutClubPage.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\AllUnitsPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\TestPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\UnitListPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.AssemblyInfoInputs.cache
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.AssemblyInfo.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\XamlC.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.dll
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.pdb
-D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\AboutClubPage.xaml.g.cs
-D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\AllUnitsPage.xaml.g.cs
-D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\TestPage.xaml.g.cs

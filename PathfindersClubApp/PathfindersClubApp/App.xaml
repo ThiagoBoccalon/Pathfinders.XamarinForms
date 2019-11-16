@@ -7,29 +7,14 @@
 
         <ResourceDictionary>
             <!-- Fonts Styles BEGIN -->
-                <OnPlatform x:Key="Font-Allan-Regular"  x:TypeArguments="x:String">
-                    <On Platform="Android" Value="Allan-Regular.ttf#Allan-Regular"/>
-                </OnPlatform>
+           <OnPlatform x:Key="Caramelia"  x:TypeArguments="x:String">
+                <On Platform="Android" Value="Caramelia.otf#Caramelia"/>
+           </OnPlatform>
 
-                <OnPlatform x:Key="Font-AmaticSC-Regular"  x:TypeArguments="x:String">
-                    <On Platform="Android" Value="AmaticSC-Regular.ttf#AmaticSC-Regular"/>
-                </OnPlatform>
+            <OnPlatform x:Key="AmaticSC-Regular"  x:TypeArguments="x:String">
+                <On Platform="Android" Value="AmaticSC-Regular.ttf#AmaticSC-Regular"/>
+            </OnPlatform>
             <!-- Fonts Styles END -->
-            
-            <!-- MAIN PAGE STYLES BEGIN -->
-            <Style x:Key="main" TargetType="Frame">
-                <Setter Property="CornerRadius" Value="100"/>
-                <!--
-                <Setter Property="HeightRequest" Value="300" />
-                <Setter Property="WidthRequest" Value="300" />
-                <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="Padding" Value="0"/>
-                <Setter Property="IsClippedToBounds" Value="False"/>
-                <Setter Property="HasShadow" Value="False"/>
-                <Setter Property="BackgroundColor" Value="#4527a0"/>
-                -->
-            </Style>
-            <!-- MAIN PAGE STYLES END -->            
         </ResourceDictionary>
 
 	</Application.Resources>

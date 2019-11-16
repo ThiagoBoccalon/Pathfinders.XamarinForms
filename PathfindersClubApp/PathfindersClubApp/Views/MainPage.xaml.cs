@@ -11,7 +11,7 @@ namespace PathfindersClubApp.Views
     {
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent();                    
         }
     }
 }

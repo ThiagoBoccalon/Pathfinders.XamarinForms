@@ -1,125 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             xmlns:custom="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin" 
              x:Class="PathfindersClubApp.Views.MainPage"
-             Title="{Binding Title}" BackgroundColor="White">
+             Title="{Binding Title}"             
+             BackgroundColor="White" NavigationPage.HasNavigationBar="False"
+             >
     
     <Page.Resources>
+        <Style TargetType="ImageButton">
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="BorderColor" Value="Black"/>
+            <Setter Property="BorderWidth" Value="0"/>
+        </Style>
         <Style TargetType="Frame">
-            <Setter Property="CornerRadius" Value="100"/>
-            <Setter Property="HeightRequest" Value="140" />
-            <Setter Property="WidthRequest" Value="140" />
-            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
-            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
             <Setter Property="Padding" Value="0"/>
-            <Setter Property="IsClippedToBounds" Value="False"/>
-            <Setter Property="HasShadow" Value="False"/>
-            <Setter Property="BackgroundColor" Value="#4527a0"/>            
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="HasShadow" Value="True"/>            
         </Style>
-        <Style x:Key="grid" TargetType="Grid">
-            <Setter Property="Padding" Value="10"/>
-            <Setter Property="IsClippedToBounds" Value="True"/>
-            <Setter Property="BackgroundColor" Value="Transparent"/>
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="HeightRequest" Value="50"/>
-            <Setter Property="CornerRadius" Value="50"/>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="VerticalOptions" Value="End"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="Margin" Value="0,15"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>            
         </Style>
     </Page.Resources>
     
     
-    <StackLayout Padding="15,30" 
+    <StackLayout Padding="25"                 
                  VerticalOptions="FillAndExpand"
-                 HorizontalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"                 
                  >        
-        <Grid VerticalOptions="FillAndExpand">
+        <Grid VerticalOptions="FillAndExpand"
+              RowSpacing="7">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>            
-            <!-- FIRST LINE BEGIN -->
-            <Grid Grid.Row="0"
-                  Style="{StaticResource grid}">
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Row="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>                    
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0">
-                    <StackLayout Spacing="3">
-                        <Frame>
-                            <Image Source="main_atalaiaInternacional.png" 
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center" />
-                        </Frame>
-                        <Button BackgroundColor="#331d76"
-                                TextColor="White"
-                                Text="Quem Somos"
-                                Command="{Binding NavigateToAboutPageCommand}"
-                                />
-                    </StackLayout>
-                </Grid>
-                <Grid Grid.Column="1">
-                        <StackLayout Spacing="3">
-                            <Frame>
-                                <Image Source="main_unidades.png"
-                                   HorizontalOptions="CenterAndExpand"
-                                   VerticalOptions="CenterAndExpand"/>
-                            </Frame>
-                            <Button BackgroundColor="#331d76"
-                                TextColor="White"
-                                Text="Unidades"
-                                Command="{Binding NavigateToUnitListPageCommand}"/>
-                        </StackLayout>
+                <Frame Grid.Column="0">
+                    <Grid>
+                        <ImageButton BackgroundColor="#5cae42" 
+                                     Source="main_atalaiaInternacional.png"/>    
+                        <Label Text="Sobre"/>
                     </Grid>
-                </Grid>
-            <!-- FIRST LINE END -->
-            <Grid Grid.Row="1"                                    
-                  Padding="10">
-                <StackLayout>
-                    <Frame CornerRadius="20"
-                           HorizontalOptions="FillAndExpand">
-                        <Image Source="main_calendar.png"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center"/>
-                    </Frame>
-                    <Button BackgroundColor="#331d76"
-                            Text="Agenda"
-                            TextColor="White"
-                            Command="{Binding NaviagetToTestPageCommand}"
-                            />
-                </StackLayout>
+                </Frame>
+                <Frame Grid.Column="1">
+                    <Grid>
+                        <ImageButton BackgroundColor="#387bc1"                        
+                                     Source="main_unidades.png"/>
+                        <Label Text="Unidades" />
+                    </Grid>
+                </Frame>
             </Grid>
-            <!-- THREE LINE BEGIN -->
+            
+            <Grid Grid.Row="1" 
+                  VerticalOptions="FillAndExpand">
+                <Frame>
+                    <Grid>
+                        <ImageButton BackgroundColor="#ecc021"                        
+                            Source="main_calendar.png"/>
+                        <Label Text="Agenda"/>
+                    </Grid>
+                </Frame>
+            </Grid>
+            
             <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0">
-                    <StackLayout Spacing="3">
-                        <Frame>
-                            <Image Source="main_louvor.png"/>
-                        </Frame>
-                        <Button BackgroundColor="#331d76"
-                                TextColor="White"
-                                Text="Músicas"/>
-                    </StackLayout>                    
-                 </Grid>
-                        <Grid Grid.Column="1">
-                            <StackLayout Spacing="3">
-                                <Frame>
-                                    <Image Source="main_director.png"/>
-                                </Frame>
-                                <Button BackgroundColor="#331d76"
-                            TextColor="White"
-                            Text="Diretoria"/>
-                            </StackLayout>
-                        </Grid>
-               </Grid>
-            <!--THREE LINE END -->
-            
-        </Grid>        
+                <Frame Grid.Column="0">
+                    <Grid>
+                        <ImageButton BackgroundColor="#83489a"
+                                    Source="main_louvor.png"/>
+                        <Label Text="Músicas"/>
+                    </Grid>
+                </Frame>
+                <Frame Grid.Column="1">
+                    <Grid>
+                        <ImageButton BackgroundColor="#d9444a" 
+                                     Source="main_director.png"/>
+                        <Label Text="Diretoria"/>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </Grid>       
         
     </StackLayout>
 
