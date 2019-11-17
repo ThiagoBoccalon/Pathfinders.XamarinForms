@@ -58,7 +58,8 @@
                 <Frame Grid.Column="1">
                     <Grid>
                         <ImageButton BackgroundColor="#387bc1"                        
-                                     Source="main_unidades.png"/>
+                                     Source="main_unidades.png"
+                                     Command="{Binding NavigateToUnitListPageCommand}"/>
                         <Label Text="Unidades" />
                     </Grid>
                 </Frame>

@@ -8,37 +8,41 @@
              Title="Unidades do Clube">
 
     <Page.Resources>
-        <Style x:Key="test" TargetType="Label">
-            <Setter Property="FontSize" Value="Body"/>
-        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>
+        </Style>        
     </Page.Resources>
     <ContentPage.Content>
-        <ScrollView Padding="30">
+        <StackLayout Padding="20,2">
             <ListView CachingStrategy="RecycleElement"
                       BackgroundColor="Transparent"
-                      SeparatorColor="Black"
-                      Margin="0,20"                      
+                      SeparatorColor="Black"                      
                       ItemsSource="{Binding Units}"
                       HasUnevenRows="True"                      
+                      VerticalScrollBarVisibility="Never"
                       SelectedItem="{Binding SelectedUnit, Mode=TwoWay}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal"
-                                         HeightRequest="100">
+                                         HeightRequest="100"                                         
+                                         >                                
                                 <custom:CircleImage Source="{Binding Image}"
-                                                    VerticalOptions="CenterAndExpand" 
-                                                    HeightRequest="50"                                                   
-                                                    />                               
-                                <Label Text="{Binding Name}" 
-                                       FontSize="30" 
-                                       TextColor="Black"                                        
-                                       VerticalOptions="CenterAndExpand"/>
+                                                    VerticalOptions="CenterAndExpand"
+                                                    HorizontalOptions="Start"
+                                                    HeightRequest="80"  
+                                                    BorderColor="Black"
+                                                    BorderThickness="0.5"
+                                                    />                                
+                                <Label Text="{Binding Name}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </ScrollView>
+        </StackLayout>
     </ContentPage.Content>  
 </ContentPage>
