@@ -5,20 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="PathfindersClubApp.Views.TestPage">
     <StackLayout Padding="40">
-        <Frame HeightRequest="100"
-               WidthRequest="100"
-               VerticalOptions="Start"
-               HorizontalOptions="CenterAndExpand"
-               CornerRadius="100">
-            <Image Source="unit_bandeira_Italy"   
-                   HeightRequest="320"
-                   WidthRequest="320"
-                   Aspect="AspectFill"
-                   FlowDirection="LeftToRight"
-                   
-                   VerticalOptions="FillAndExpand" 
-                   HorizontalOptions="FillAndExpand"/>
-        </Frame>
+        
     </StackLayout>
   
 </ContentPage>

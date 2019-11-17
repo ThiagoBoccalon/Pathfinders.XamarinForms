@@ -24,14 +24,15 @@ namespace PathfindersClubApp.Models
             {
                 Name = "Águias",
                 Image = "unit_bandeira_USA",
-                Conselheiro = new Conselheiro() { Name = "Débora Mascarenhas", Image = ""}
+                Conselheiro = new Conselheiro() { Name = "Débora Mascarenhas", Image = "conselheira_aguias" }
             });
 
             Units.Add(new Unit
             {
                 Name = "Cangurus",
                 Image = "unit_bandeira_NewZealand",
-                Conselheiro = new Conselheiro() { Name = "Sarah Engler", Image = "" }
+                AnthemUnity = "Hino da unidade canguru......",
+                Conselheiro = new Conselheiro() { Name = "Sarah Engler", Image = "conselheira_aguias" }
             });
 
             Units.Add(new Unit

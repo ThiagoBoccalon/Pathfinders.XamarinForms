@@ -8,6 +8,7 @@ namespace PathfindersClubApp.Models
     {        
         public string Name { get; set; }
         public string Image { get; set; }
+        public string AnthemUnity { get; set; }
         public Conselheiro Conselheiro { get; set; }
     }
 }

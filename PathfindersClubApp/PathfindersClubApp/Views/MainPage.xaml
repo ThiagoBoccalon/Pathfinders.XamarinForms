@@ -21,10 +21,10 @@
             <Setter Property="HasShadow" Value="True"/>            
         </Style>
         <Style TargetType="Label">
-            <Setter Property="TextColor" Value="White"/>
-            <Setter Property="VerticalOptions" Value="End"/>
-            <Setter Property="HorizontalOptions" Value="Center"/>
-            <Setter Property="Margin" Value="0,15"/>
+            <Setter Property="TextColor" Value="LightYellow"/>
+            <Setter Property="VerticalOptions" Value="EndAndExpand"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="Margin" Value="0,5"/>
             <Setter Property="FontSize" Value="Large"/>
             <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>            
         </Style>
@@ -49,11 +49,12 @@
                     <ColumnDefinition Width="*"/>                    
                 </Grid.ColumnDefinitions>
                 <Frame Grid.Column="0">
-                    <Grid>
+                    <StackLayout>                        
                         <ImageButton BackgroundColor="#5cae42" 
-                                     Source="main_atalaiaInternacional.png"/>    
+                                     Source="main_atalaiaInternacional.png"
+                                     Command="{Binding NavigateToAboutPageCommand}"/>    
                         <Label Text="Sobre"/>
-                    </Grid>
+                    </StackLayout>
                 </Frame>
                 <Frame Grid.Column="1">
                     <Grid>

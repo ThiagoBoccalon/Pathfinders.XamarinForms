@@ -30,29 +30,20 @@ namespace PathfindersClubApp.ViewModels
             set
             {
                 _selectedUnit = value;
-
-                /* In Test
-                HandleSelectedItem();
-                */
-
                 SelectedUnitPage();
             }
         }
 
         private void SelectedUnitPage()
         {
-            _navigationService.NavigateAsync("AllUnitPage");
+            var navigationParams = new NavigationParameters();
+            navigationParams.Add("unidadeSelected", _selectedUnit);
+            _navigationService.NavigateAsync("AllUnitsPage", navigationParams);
         }
-        /*
-        private void HandleSelectedItem()
-        {
-            _navigationService.NavigateAsync(SelectedUnit.Page);
-        }
-        */
+        
         public UnitListPageViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;            
-        }     
-        
+        }             
     }
 }

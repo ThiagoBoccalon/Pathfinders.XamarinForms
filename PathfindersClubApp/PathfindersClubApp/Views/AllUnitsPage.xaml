@@ -2,35 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
+             xmlns:custom="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin" 
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="PathfindersClubApp.Views.AllUnitsPage"
              Title="{Binding TitleNameUnit}">
     <Page.Resources>
         
-    </Page.Resources>
-    
+    </Page.Resources>    
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="30">
-                <Image Source="{Binding Image}" />
-                <Label x:Name="DescriptionUnit" />
-                <Frame>
-                    <ListView
-                        ItemsSource="{Binding Conselheiros}">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <StackLayout>
-                                        <Frame>
-                                            <Image Source="{Binding Image}"/>
-                                        </Frame>
-                                        <Label Text="{Binding Name}" />
-                                    </StackLayout>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </Frame>
+            <StackLayout Spacing="15" Padding="5,0">
+                <Image Source="{Binding ImageBandeiraUnidade}" 
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Start"
+                       HeightRequest="220"
+                       />
+                <Label Text="Grito de guerra da uniade"
+                       HorizontalOptions="Center"/>
+                <StackLayout Spacing="0">
+                    <custom:CircleImage Source="{Binding ImageConselheiro}"
+                                        MinimumHeightRequest="50"
+                                        MinimumWidthRequest="50"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        HeightRequest="80"  
+                                        BorderColor="Black"
+                                        BorderThickness="0.5"
+                        />
+                    <Label Text="{Binding NomeConselheiro}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="StartAndExpand"
+                           FontFamily="{StaticResource Caramelia}"
+                           />
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>  

@@ -35,7 +35,7 @@
                                                     HorizontalOptions="Start"
                                                     HeightRequest="80"  
                                                     BorderColor="Black"
-                                                    BorderThickness="0.5"
+                                                    BorderThickness="0.5"                                                    
                                                     />                                
                                 <Label Text="{Binding Name}" />
                             </StackLayout>
