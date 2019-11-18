@@ -15,13 +15,63 @@ namespace PathfindersClubApp.ViewModels
             
         }
 
-        public string TitleNameUnit { get; private set; }        
+        private string _titleNameUnit;
+        public string TitleNameUnit
+        {
+            get
+            {
+                return _titleNameUnit;
+            }
+            private set
+            {
+                _titleNameUnit = value;
+                OnPropertyChanged();
+            }
+        }
 
-        public string ImageBandeiraUnidade { get; private set; }
+        private string _imageBandeiraUnidade;
+        
+        public string ImageBandeiraUnidade
+        {
+            get
+            {
+                return _imageBandeiraUnidade;
+            }
+            private set
+            {
+                _imageBandeiraUnidade = value;
+                OnPropertyChanged();
+            }
+        }
 
-        public string NomeConselheiro { get; private set; }
+        private string _nomeConselheiro;
 
-        public string ImageConselheiro { get; private set; }
+        public string NomeConselheiro
+        {
+            get
+            {
+                return _nomeConselheiro;
+            }
+            private set
+            {
+                _nomeConselheiro = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string _imageConselheiro;
+        public string ImageConselheiro
+        {
+            get
+            {
+                return _imageConselheiro;
+            }
+            set
+            {
+                _imageConselheiro = value;
+                OnPropertyChanged();
+            }
+        }
 
         public void OnNavigatedFrom(INavigationParameters parameters)
         {

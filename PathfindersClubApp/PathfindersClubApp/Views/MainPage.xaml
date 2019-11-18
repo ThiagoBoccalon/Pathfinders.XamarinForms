@@ -21,7 +21,7 @@
             <Setter Property="HasShadow" Value="True"/>            
         </Style>
         <Style TargetType="Label">
-            <Setter Property="TextColor" Value="LightYellow"/>
+            <Setter Property="TextColor" Value="White"/>
             <Setter Property="VerticalOptions" Value="EndAndExpand"/>
             <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
             <Setter Property="Margin" Value="0,5"/>
@@ -49,12 +49,12 @@
                     <ColumnDefinition Width="*"/>                    
                 </Grid.ColumnDefinitions>
                 <Frame Grid.Column="0">
-                    <StackLayout>                        
+                    <Grid>                        
                         <ImageButton BackgroundColor="#5cae42" 
                                      Source="main_atalaiaInternacional.png"
                                      Command="{Binding NavigateToAboutPageCommand}"/>    
                         <Label Text="Sobre"/>
-                    </StackLayout>
+                    </Grid>
                 </Frame>
                 <Frame Grid.Column="1">
                     <Grid>

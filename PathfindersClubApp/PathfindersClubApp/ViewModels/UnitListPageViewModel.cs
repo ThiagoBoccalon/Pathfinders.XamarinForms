@@ -31,6 +31,7 @@ namespace PathfindersClubApp.ViewModels
             {
                 _selectedUnit = value;
                 SelectedUnitPage();
+                
             }
         }
 
