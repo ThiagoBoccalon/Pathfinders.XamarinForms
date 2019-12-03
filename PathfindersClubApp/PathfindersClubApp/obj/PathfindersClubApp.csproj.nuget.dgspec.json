@@ -14,8 +14,7 @@
         "outputPath": "D:\\GitHub\\Pathfinders.XamarinForms\\PathfindersClubApp\\PathfindersClubApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config",

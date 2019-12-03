@@ -14,6 +14,10 @@
             <OnPlatform x:Key="AmaticSC-Regular"  x:TypeArguments="x:String">
                 <On Platform="Android" Value="AmaticSC-Regular.ttf#AmaticSC-Regular"/>
             </OnPlatform>
+
+            <OnPlatform x:Key="Font-Allan-Regular"  x:TypeArguments="x:String">
+                <On Platform="Android" Value="Allan-Regular.ttf#Allan-Regular"/>
+            </OnPlatform>
             <!-- Fonts Styles END -->
         </ResourceDictionary>
 

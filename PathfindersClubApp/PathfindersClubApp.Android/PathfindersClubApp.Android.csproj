@@ -81,6 +81,7 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\Caramelia.otf" />
     <AndroidAsset Include="Assets\AmaticSC-Regular.ttf" />
+    <AndroidAsset Include="Assets\Allan-Regular.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>

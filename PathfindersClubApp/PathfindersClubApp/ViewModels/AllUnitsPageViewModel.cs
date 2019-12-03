@@ -5,6 +5,7 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xamarin.Forms;
 
 namespace PathfindersClubApp.ViewModels
 {
@@ -73,6 +74,20 @@ namespace PathfindersClubApp.ViewModels
             }
         }
 
+        private StackLayout _anthemUnity;
+        public StackLayout AnthemUnity
+        {
+            get
+            {
+                return _anthemUnity;
+            }
+            set
+            {
+                _anthemUnity = value;
+                OnPropertyChanged();
+            }
+        }
+
         public void OnNavigatedFrom(INavigationParameters parameters)
         {
             throw new NotImplementedException();
@@ -85,6 +100,7 @@ namespace PathfindersClubApp.ViewModels
             ImageBandeiraUnidade = unidade.Image;
             NomeConselheiro = unidade.Conselheiro.Name;
             ImageConselheiro = unidade.Conselheiro.Image;
+            AnthemUnity = unidade.AnthemUnity;
         }
     }
 }

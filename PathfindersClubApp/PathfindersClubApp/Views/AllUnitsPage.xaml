@@ -7,31 +7,46 @@
              x:Class="PathfindersClubApp.Views.AllUnitsPage"
              Title="{Binding TitleNameUnit}">
     <Page.Resources>
-        
+        <Style x:Key="anthemUnity" TargetType="Label">
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
     </Page.Resources>    
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="15" Padding="5,0">
+            <StackLayout Spacing="10" Padding="17,10">
                 <Image Source="{Binding ImageBandeiraUnidade}" 
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Start"
-                       HeightRequest="220"
+                       HeightRequest="260"
                        />
-                <Label Text="Grito de guerra da uniade"
-                       HorizontalOptions="Center"/>
+                <StackLayout BackgroundColor="{Binding ColorAnthemUnity}">
+                    <ListView ItemsSource="{Binding AnthemsUnity}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Label Text="{Binding Label}"/>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
                 <StackLayout Spacing="0">
                     <custom:CircleImage Source="{Binding ImageConselheiro}"
-                                        MinimumHeightRequest="50"
-                                        MinimumWidthRequest="50"
+                                        MinimumHeightRequest="150"
+                                        MinimumWidthRequest="150"
                                         HorizontalOptions="CenterAndExpand"
                                         VerticalOptions="CenterAndExpand"
-                                        HeightRequest="80"  
+                                        HeightRequest="150"  
                                         BorderColor="Black"
                                         BorderThickness="0.5"
                         />
                     <Label Text="{Binding NomeConselheiro}"
                            HorizontalOptions="CenterAndExpand"
                            VerticalOptions="StartAndExpand"
+                           FontSize="Large"
                            FontFamily="{StaticResource Caramelia}"
                            />
                 </StackLayout>
