@@ -22,22 +22,26 @@
         </Style>
     </Page.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="20">
-            <Label Text="Atalaia Internacional"                                 
-                   Style="{StaticResource LabelTitle}"
-                   />
-            <StackLayout Margin="0,20,0,0">
-                <Label x:Name="aboutIntroductionOne" Style="{StaticResource AboutText}"/>
-                <Label x:Name="aboutIntroductionTwo" Style="{StaticResource AboutText}"/>
+        <ScrollView>
+            <StackLayout Padding="30" Spacing="20">
+                <Label Text="Atalaia Internacional"                                 
+                       Style="{StaticResource LabelTitle}"
+                       />
+                <Image Source="about_historyClub_01"
+                       VerticalOptions="Start"
+                       HorizontalOptions="CenterAndExpand"
+                       MinimumHeightRequest="350"
+                       MinimumWidthRequest="350"/>
+                <StackLayout>
+                    <Label x:Name="aboutIntroductionOne" Style="{StaticResource AboutText}"/>
+                    <Label x:Name="aboutIntroductionTwo" Style="{StaticResource AboutText}"/>
+                </StackLayout>
+                <Label Text="Camporis Participados"
+                       Style="{StaticResource LabelTitle}"
+                       Margin="0,20,0,0"/>
+                <StackLayout x:Name="stackCamporis" 
+                             HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
-
-            <Label Text="Camporis Participados"
-                   Style="{StaticResource LabelTitle}"
-                   Margin="0,20,0,0"/>
-
-            <StackLayout >
-                <Label x:Name="camporisPaticipados"/>
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>  
 </ContentPage>

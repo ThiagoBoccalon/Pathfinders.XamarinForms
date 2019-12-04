@@ -23,14 +23,14 @@ namespace PathfindersClubApp.Views {
         private global::Xamarin.Forms.Label aboutIntroductionTwo;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label camporisPaticipados;
+        private global::Xamarin.Forms.StackLayout stackCamporis;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AboutClubPage));
             aboutIntroductionOne = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "aboutIntroductionOne");
             aboutIntroductionTwo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "aboutIntroductionTwo");
-            camporisPaticipados = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "camporisPaticipados");
+            stackCamporis = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "stackCamporis");
         }
     }
 }

@@ -21,18 +21,7 @@
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Start"
                        HeightRequest="260"
-                       />
-                <StackLayout BackgroundColor="{Binding ColorAnthemUnity}">
-                    <ListView ItemsSource="{Binding AnthemsUnity}">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <Label Text="{Binding Label}"/>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </StackLayout>
+                       />                
                 <StackLayout Spacing="0">
                     <custom:CircleImage Source="{Binding ImageConselheiro}"
                                         MinimumHeightRequest="150"

@@ -219,6 +219,12 @@ namespace PathfindersClubApp.Models
             });
         }
 
+        public CadastroCampori()
+        {
+            SetCamporisYearsNinety();
+            SetCamporisYearsTwoThousand();
+            SetCamporisOthers();
+        }
         public List<Campori> GetCamporis()
         {
             return camporis;
