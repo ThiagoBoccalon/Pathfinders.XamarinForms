@@ -17,11 +17,12 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="10" Padding="17,10">
-                <Image Source="{Binding ImageBandeiraUnidade}" 
+                <Image x:Name="bandeiraUnidade" Source="{Binding ImageBandeiraUnidade}" 
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Start"
                        HeightRequest="260"
-                       />                
+                       />
+                <StackLayout x:Name="stackTest" />
                 <StackLayout Spacing="0">
                     <custom:CircleImage Source="{Binding ImageConselheiro}"
                                         MinimumHeightRequest="150"

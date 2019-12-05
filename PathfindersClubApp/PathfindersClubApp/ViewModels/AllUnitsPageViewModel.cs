@@ -10,12 +10,7 @@ using Xamarin.Forms;
 namespace PathfindersClubApp.ViewModels
 {
     public class AllUnitsPageViewModel : BindableBase, INavigationAware
-    {        
-        public AllUnitsPageViewModel()
-        {
-            
-        }
-
+    {  
         private string _titleNameUnit;
         public string TitleNameUnit
         {
@@ -74,20 +69,21 @@ namespace PathfindersClubApp.ViewModels
             }
         }
 
-        private StackLayout _anthemUnity;
-        public StackLayout AnthemUnity
+        private string _antherm;
+
+        public string Antherms
         {
             get
             {
-                return _anthemUnity;
+                return _antherm;
             }
             set
             {
-                _anthemUnity = value;
+                _antherm = value;
                 OnPropertyChanged();
             }
         }
-
+        
         public void OnNavigatedFrom(INavigationParameters parameters)
         {
             throw new NotImplementedException();
@@ -99,8 +95,8 @@ namespace PathfindersClubApp.ViewModels
             TitleNameUnit = unidade.Name;
             ImageBandeiraUnidade = unidade.Image;
             NomeConselheiro = unidade.Conselheiro.Name;
-            ImageConselheiro = unidade.Conselheiro.Image;
-            AnthemUnity = unidade.AnthemUnity;
+            ImageConselheiro = unidade.Conselheiro.Image;            
+            Antherms = unidade.
         }
     }
 }
