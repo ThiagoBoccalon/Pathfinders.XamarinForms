@@ -2,9 +2,9 @@
 
 namespace PathfindersClubApp.Views.Units
 {
-    public partial class AguiaUnitPage : ContentPage
+    public partial class TucanosUnitPage : ContentPage
     {
-        public AguiaUnitPage()
+        public TucanosUnitPage()
         {
             InitializeComponent();
         }

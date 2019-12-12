@@ -24,6 +24,7 @@ D:\Git\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\bin\Debug\netstandard2.0\PathfindersClubApp.deps.json
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\bin\Debug\netstandard2.0\PathfindersClubApp.dll
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\bin\Debug\netstandard2.0\PathfindersClubApp.pdb
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.csprojAssemblyReference.cache
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\AboutClubPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\AllUnitsPage.xaml.g.cs
@@ -35,4 +36,4 @@ D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Deb
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\XamlC.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.dll
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.pdb
-D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.csprojAssemblyReference.cache
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Units\TucanosUnitPage.xaml.g.cs

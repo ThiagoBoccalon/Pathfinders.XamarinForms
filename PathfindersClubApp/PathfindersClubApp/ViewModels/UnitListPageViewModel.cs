@@ -10,17 +10,9 @@ namespace PathfindersClubApp.ViewModels
 {
     public class UnitListPageViewModel : BindableBase
     {
-        CadastroUnit cadastroUnit = new CadastroUnit();
-        public List<Unit> Units
-        {
-            get
-            {
-                return cadastroUnit.Units;
-            }            
-        }
         private INavigationService _navigationService;
-
-        public Unit _selectedUnit { get; set; }
+        public List<Unit> Units { get; private set; } = new List<Unit>();
+        private Unit _selectedUnit { get; set; }
         public Unit SelectedUnit
         {
             get
@@ -30,21 +22,21 @@ namespace PathfindersClubApp.ViewModels
             set
             {
                 _selectedUnit = value;
-                SelectedUnitPage();
-                
+                HandleSelectedItem();
             }
         }
 
-        private void SelectedUnitPage()
+        private void HandleSelectedItem()
         {
-            var navigationParams = new NavigationParameters();
-            navigationParams.Add("unidadeSelected", _selectedUnit);
-            _navigationService.NavigateAsync("AllUnitsPage", navigationParams);
+            _navigationService.NavigateAsync(SelectedUnit.Page);
         }
-        
+
         public UnitListPageViewModel(INavigationService navigationService)
         {
-            _navigationService = navigationService;            
+            _navigationService = navigationService;
+            CadastroUnit cadastroUnit = new CadastroUnit();
+
+            Units = cadastroUnit.Units;
         }             
     }
 }

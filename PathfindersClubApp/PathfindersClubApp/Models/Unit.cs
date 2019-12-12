@@ -9,8 +9,6 @@ namespace PathfindersClubApp.Models
     {        
         public string Name { get; set; }
         public string Image { get; set; }
-        public string BackgroundColor { get; set; }        
-        public string Antherm { get; set; }
-        public Conselheiro Conselheiro { get; set; }
+        public string Page { get; set; }
     }
 }

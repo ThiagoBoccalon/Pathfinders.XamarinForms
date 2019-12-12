@@ -94,9 +94,6 @@ namespace PathfindersClubApp.ViewModels
             var unidade = parameters["unidadeSelected"] as Unit;
             TitleNameUnit = unidade.Name;
             ImageBandeiraUnidade = unidade.Image;
-            NomeConselheiro = unidade.Conselheiro.Name;
-            ImageConselheiro = unidade.Conselheiro.Image;            
-            Antherms = unidade.
         }
     }
 }

@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PathfindersClubApp.Views.Units.AguiaUnitPage.xaml", "Views/Units/AguiaUnitPage.xaml", typeof(global::PathfindersClubApp.Views.Units.AguiaUnitPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PathfindersClubApp.Views.Units.TucanosUnitPage.xaml", "Views/Units/TucanosUnitPage.xaml", typeof(global::PathfindersClubApp.Views.Units.TucanosUnitPage))]
 
 namespace PathfindersClubApp.Views.Units {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Units\\AguiaUnitPage.xaml")]
-    public partial class AguiaUnitPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Units\\TucanosUnitPage.xaml")]
+    public partial class TucanosUnitPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AguiaUnitPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TucanosUnitPage));
         }
     }
 }

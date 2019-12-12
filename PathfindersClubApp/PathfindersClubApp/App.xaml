@@ -2,6 +2,7 @@
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
              xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+             xmlns:custom="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="PathfindersClubApp.App">
 	<Application.Resources>
 
@@ -15,10 +16,52 @@
                 <On Platform="Android" Value="AmaticSC-Regular.ttf#AmaticSC-Regular"/>
             </OnPlatform>
 
+            <OnPlatform x:Key="AmaticSC-Bold"  x:TypeArguments="x:String">
+                <On Platform="Android" Value="AmaticSC-Bold.ttf#AmaticSC-Bold"/>
+            </OnPlatform>
+
             <OnPlatform x:Key="Font-Allan-Regular"  x:TypeArguments="x:String">
                 <On Platform="Android" Value="Allan-Regular.ttf#Allan-Regular"/>
             </OnPlatform>
             <!-- Fonts Styles END -->
+            <!-- Units Page BEGIN -->
+            <Style x:Key="IntroAntherm" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontSize" Value="56"/>
+                <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+
+            <Style x:Key="Antherm" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="LineHeight" Value="1.3"/>                
+            </Style>
+
+            <Style x:Key="NameConselheiro" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="0,-40,0,0"/>
+                <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>
+                <Setter Property="FontSize" Value="22"/>
+            </Style>
+
+            <Style x:Key="ImageConselheiro" TargetType="custom:CircleImage">
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="WidthRequest" Value="100"/>
+            </Style>
+
+            <Style x:Key="StackConselheiro" TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="Spacing" Value="20"/>
+                <Setter Property="Padding" Value="20"/>
+            </Style>
+            <!-- Units Page END -->
         </ResourceDictionary>
 
 	</Application.Resources>
