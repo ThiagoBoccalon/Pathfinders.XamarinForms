@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:custom="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Units.AguiasUnitPage"
+             Title="Águias Americanas">
+
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Padding="10, 20" Spacing="20">
+                <Image Source="unit_bandeira_USA.jpg" MinimumHeightRequest="120"/>                
+            </StackLayout>
+            <Label Text="Nosso Grito:" Style="{StaticResource IntroAntherm}"/>
+            <StackLayout BackgroundColor="#3f5f90" HorizontalOptions="FillAndExpand" Spacing="2">
+                <StackLayout Padding="20">
+                    <Label Text="Unidade Águais como é que é?" Style="{StaticResource Antherm}" FontSize="42"/>
+                    <Label Text="Força, garra e determinação, coragem e ousadia pra cumprir nossa missão, com Cristo no comando iremos te mostrar que Ele salva vidas pelo nosso expressar. Nosso lema amor e união nosso objetivo é alcançar a salvação. Unidades Águias." 
+                           Style="{StaticResource Antherm}"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Style="{StaticResource StackConselheiro}">
+                <custom:CircleImage Source="conselheira_aguias.jpg" Style="{StaticResource ImageConselheiro}"/>
+                <Label Text="Conselheira: Débora Mascarenhas" Style="{StaticResource NameConselheiro}"/>                
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

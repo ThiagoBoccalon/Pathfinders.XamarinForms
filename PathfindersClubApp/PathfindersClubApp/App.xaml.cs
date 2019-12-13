@@ -41,6 +41,11 @@ namespace PathfindersClubApp
             containerRegistry.RegisterForNavigation<AllUnitsPage, AllUnitsPageViewModel>();
             containerRegistry.RegisterForNavigation<TestPage, TestPageViewModel>();            
             containerRegistry.RegisterForNavigation<TucanosUnitPage, TucanosUnitPageViewModel>();
+            containerRegistry.RegisterForNavigation<PumasUnitPage, PumasUnitPageViewModel>();
+            containerRegistry.RegisterForNavigation<TigresUnitPage, TigresUnitPageViewModel>();
+            containerRegistry.RegisterForNavigation<AguiasUnitPage, AguiasUnitPageViewModel>();
+            containerRegistry.RegisterForNavigation<CangurusUnitPage, CangurusUnitPageViewModel>();
+            containerRegistry.RegisterForNavigation<FalcoesUnitPage, FalcoesUnitPageViewModel>();
         }
     }
 }

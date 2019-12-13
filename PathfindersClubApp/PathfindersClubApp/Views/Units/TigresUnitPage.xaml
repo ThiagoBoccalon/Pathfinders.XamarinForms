@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:custom="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Units.TigresUnitPage"
+             Title="Tigres da Malásia">
+
+    <ScrollView>
+        <StackLayout>
+            <StackLayout Padding="10, 20" Spacing="20">
+                <Image Source="unit_bandeira_Malasia.jpg" MinimumHeightRequest="120"/>
+            </StackLayout>
+            <Label Text="Nosso Grito:" Style="{StaticResource IntroAntherm}"/>
+            <StackLayout BackgroundColor="#2a62b7" HorizontalOptions="FillAndExpand" Spacing="2">
+                <StackLayout Padding="20">
+                    <Label Text="Somos da Malásia animais de melhor categoria se ganhamos ou perdemos seremos campeões competir é o que basta para os nossos corações na selva nos escondemos de humanos sem perdão se um dia formos pegos acabaremos em extinção" Style="{StaticResource Grito}"/>
+                    <Label Text="UNIDADADE" Style="{StaticResource Antherm}" FontSize="42"/>
+                    <Label Text="Tigres" Style="{StaticResource Antherm}"/>
+                    <Label Text="TIGRE É O MELHOR ANIMAL" Style="{StaticResource Antherm}" FontSize="42"/>
+                    <Label Text="Pega uma pega geral" Style="{StaticResource Antherm}"/>
+                    <Label Text="Pega uma pega geral" Style="{StaticResource Antherm}"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="10" Padding="20">
+                <custom:CircleImage Source="conselheiro_tigres.jpg" Style="{StaticResource ImageConselheiro}"/>
+                <Label Text="Conselheiro: Jader Ribas" Style="{StaticResource NomeConselheiro}"/>                
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

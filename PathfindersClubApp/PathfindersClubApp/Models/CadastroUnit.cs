@@ -33,21 +33,21 @@ namespace PathfindersClubApp.Models
             {
                 Name = "Cangurus",
                 Image = "unit_bandeira_NewZealand",
-                Page = "CangurusPage"
+                Page = "CangurusUnitPage"
             });
 
             Units.Add(new Unit
             {
                 Name = "Falcões",
                 Image = "unit_bandeira_Italy",
-                Page = "FalcoesPage"
+                Page = "FalcoesUnitPage"
             });
 
             Units.Add(new Unit
             {
                 Name = "Pumas",
                 Image = "unit_bandeira_Chile",
-                Page = "PumasPage"
+                Page = "PumasUnitPage"
             });
 
             Units.Add(new Unit
