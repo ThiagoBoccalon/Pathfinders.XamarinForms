@@ -11,6 +11,7 @@ namespace PathfindersClubApp.ViewModels
     public class UnitListPageViewModel : BindableBase
     {
         private INavigationService _navigationService;
+
         public List<Unit> Units { get; private set; } = new List<Unit>();
         private Unit _selectedUnit { get; set; }
         public Unit SelectedUnit
@@ -31,12 +32,16 @@ namespace PathfindersClubApp.ViewModels
             _navigationService.NavigateAsync(SelectedUnit.Page);
         }
 
-        public UnitListPageViewModel(INavigationService navigationService)
+        public void OnNavigatedFrom(INavigationParameters parameters)
         {
+            throw new NotImplementedException();
+        }
+
+        public UnitListPageViewModel(INavigationService navigationService)
+        {            
             _navigationService = navigationService;
             CadastroUnit cadastroUnit = new CadastroUnit();
-
-            Units = cadastroUnit.Units;
-        }             
+            Units = cadastroUnit.Units;            
+        }
     }
 }

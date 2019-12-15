@@ -7,8 +7,8 @@ namespace PathfindersClubApp.Views.Units
         public FalcoesUnitPage()
         {
             InitializeComponent();
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromRgb(56, 123, 193);
-            ((NavigationPage)Application.Current.MainPage).BarTextColor = Color.White;
+            //((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromRgb(30, 156, 48);
+            //((NavigationPage)Application.Current.MainPage).BarTextColor = Color.White;
         }
     }
 }

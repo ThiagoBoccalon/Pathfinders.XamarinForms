@@ -17,11 +17,13 @@
     </Page.Resources>
     <ContentPage.Content>
         <StackLayout Padding="20,2">
-            <ListView CachingStrategy="RecycleElement"
+            <ListView x:Name="unidadesListView"
+                      SelectionMode="Single"
+                      CachingStrategy="RecycleElement"                      
                       BackgroundColor="Transparent"
-                      SeparatorColor="Black"                      
+                      SeparatorColor="Black"            
                       ItemsSource="{Binding Units}"
-                      HasUnevenRows="True"                      
+                      HasUnevenRows="True"
                       VerticalScrollBarVisibility="Never"
                       SelectedItem="{Binding SelectedUnit, Mode=TwoWay}">
                 <ListView.ItemTemplate>

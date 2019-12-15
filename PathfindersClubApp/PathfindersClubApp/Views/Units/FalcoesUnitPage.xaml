@@ -13,16 +13,15 @@
                 <Image Source="unit_bandeira_Italy.jpg" MinimumHeightRequest="120"/>                
             </StackLayout>
             <Label Text="Nosso Grito:" Style="{StaticResource IntroAntherm}"/>
-            <StackLayout BackgroundColor="#5ebf70" HorizontalOptions="FillAndExpand" Spacing="2">
+            <StackLayout BackgroundColor="#1e9c30" HorizontalOptions="FillAndExpand" Spacing="2">
                 <StackLayout Padding="20">
                     <Label Text="Diz aí Falcões qual é o seu papel? Eu vôo lá no alto que rasgo até o céu! Rápidos, precisos, servos do Senhor, levando a mensagem do nosso Criador. Pregando o evangelho não fugimos da batalha somos Falcões... Falcões da Itália." 
-                           Style="{StaticResource Antherm}" 
-                           TextColor="Black"/>
-                    <Label Text="Unidade" Style="{StaticResource Antherm}" TextColor="Black" FontSize="42"/>
-                    <Label Text="Falcão" Style="{StaticResource Antherm}" TextColor="Black"/>
-                    <Label Text="Ipi ipi Urra" Style="{StaticResource Antherm}" TextColor="Black"/>
-                    <Label Text="Ipi ipi Urra" Style="{StaticResource Antherm}" TextColor="Black"/>
-                    <Label Text="Ipi ipi Urra" Style="{StaticResource Antherm}" TextColor="Black"/>
+                           Style="{StaticResource Antherm}"/>
+                    <Label Text="Unidade" Style="{StaticResource Antherm}" FontSize="42"/>
+                    <Label Text="Falcão" Style="{StaticResource Antherm}" />
+                    <Label Text="Ipi ipi Urra" Style="{StaticResource Antherm}" />
+                    <Label Text="Ipi ipi Urra" Style="{StaticResource Antherm}" />
+                    <Label Text="Ipi ipi Urra" Style="{StaticResource Antherm}" />
                 </StackLayout>
             </StackLayout>
             <StackLayout Style="{StaticResource StackConselheiro}">

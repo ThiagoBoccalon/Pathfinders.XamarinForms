@@ -9,6 +9,9 @@ namespace PathfindersClubApp.Views
         public AboutClubPage()
         {
             InitializeComponent();
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromRgb(92, 174, 66);
+            ((NavigationPage)Application.Current.MainPage).BarTextColor = Color.White;
+
             SetIntroduction();
             SetCamporis();
         }
