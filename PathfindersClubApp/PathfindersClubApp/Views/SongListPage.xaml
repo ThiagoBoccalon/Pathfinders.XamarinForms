@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.SongListPage"  
+             BackgroundImage="background_song_list.png"
+             Title="Louvor">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20,2">
+            <ListView CachingStrategy="RecycleElement"
+                      BackgroundColor="Transparent" 
+                      SeparatorColor="White" Margin="0, 40"                      
+                      ItemsSource="{Binding Songs}"
+                      HasUnevenRows="True"
+                      SelectedItem="{Binding SelectedSong, Mode=TwoWay}"                              
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HeightRequest="60">
+                                <Label Text="{Binding Name}" 
+                                       FontSize="30" 
+                                       TextColor="WhiteSmoke"
+                                       FontFamily="{StaticResource Caramelia}"
+                                       VerticalTextAlignment="Center" 
+                                       VerticalOptions="CenterAndExpand">
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

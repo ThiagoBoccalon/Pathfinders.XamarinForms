@@ -7,9 +7,7 @@ using Xamarin.Forms;
 namespace PathfindersClubApp.Views
 {
     public partial class UnitListPage : ContentPage
-    {
-        private INavigationService _navigationService;
-
+    {        
         public UnitListPage(){
             InitializeComponent();            
             ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.FromRgb(56, 123, 193);
@@ -18,21 +16,19 @@ namespace PathfindersClubApp.Views
         
         void ListViewTapped(object sender, ItemTappedEventArgs e)
         {
-            unidadesListView.ClearValue();
+            
         }
         
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            base.OnAppearing();            
             unidadesListView.ItemTapped += ListViewTapped;
         }
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            unidadesListView.ItemTapped -= ListViewTapped;
-            
-        }
-        
+            unidadesListView.ItemTapped -= ListViewTapped;            
+        }        
     }
 }

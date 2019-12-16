@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.HinoAtalaiaPage"
+             BackgroundColor="#262626"
+             Title="Hino Atalaia Internacional">
+
+    <ScrollView>
+        <StackLayout Padding="30, 40">
+            <Label Text="Por cidades e povos todos juntos marcharemos. Anunciando o regresso do capitão deste exército." Style="{StaticResource Songs}"/>
+            <Label />
+            <Label Text="CORO:" TextColor="White"/>
+            <Label Text="Desbravadores de Atalaia cumprirão sua missão. Atalaia, Atalaia maranata é a missão, treme a terra se abre o mar Atalaia vai passar, treme a terra se abre o mar Atalaia vai passar." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Por lugares não descobertos um caminho abriremos e ao passo desta canção, cumpriremos nossa missão." Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

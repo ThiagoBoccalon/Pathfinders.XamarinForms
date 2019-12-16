@@ -7,7 +7,7 @@ namespace PathfindersClubApp.Models
 {
     public class CadastroUnit
     {
-        private List<Unit> _units = new List<Unit>();
+        private List<Unit> units = new List<Unit>();
 
         public CadastroUnit()
         {
@@ -16,9 +16,9 @@ namespace PathfindersClubApp.Models
 
         public List<Unit> Units
         {
-            get { return _units; }
-            private set { _units = value; }
-        }        
+            get { return units; }
+            private set { units = value; }
+        }     
 
         private void SetUnits()
         {

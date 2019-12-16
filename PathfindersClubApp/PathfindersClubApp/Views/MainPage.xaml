@@ -85,7 +85,8 @@
                 <Frame Grid.Column="0">
                     <Grid>
                         <ImageButton BackgroundColor="#83489a"
-                                    Source="main_louvor.png"/>
+                                    Source="main_louvor.png"
+                                    Command="{Binding NavigateToSongListPageCommand}"/>
                         <Label Text="Músicas"/>
                     </Grid>
                 </Frame>

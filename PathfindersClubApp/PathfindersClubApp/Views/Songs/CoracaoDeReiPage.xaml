@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.CoracaoDeReiPage"
+             BackgroundColor="#262626"
+             Title="Coração de Rei">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="30, 40">
+                <Label Text="Eu quero ter um coração cheio da comunhão" Style="{StaticResource Songs}"/>
+                <Label Text="Eu quero ter um coração cheio da Tua unção" Style="{StaticResource Songs}"/>
+                <Label Text="Um coração com coragem pra enfrentar leão" Style="{StaticResource Songs}"/>
+                <Label/>
+                <Label Text="Eu quero ter um coração contagiante" Style="{StaticResource Songs}"/>
+                <Label Text="Um coração mais forte que um diamante" Style="{StaticResource Songs}"/>
+                <Label Text="Um coração pra derrubar os meus gigantes" Style="{StaticResource Songs}"/>
+                <Label/>
+                <Label Text="CORO:" TextColor="WhiteSmoke"/>
+                <Label Text="Um coração pra teu louvor" Style="{StaticResource Songs}"/>
+                <Label Text="Um coração desbravador" Style="{StaticResource Songs}"/>
+                <Label/>
+                <Label Text="Coração segundo o coração de Deus" Style="{StaticResource Songs}"/>
+                <Label Text="Coração que bate em mim mas não é meu" Style="{StaticResource Songs}"/>
+                <Label Text="Só com esse coração eu vencerei" Style="{StaticResource Songs}"/>
+                <Label Text="Coração de um verdadeiro adorador" Style="{StaticResource Songs}"/>
+                <Label Text="Coração que luta com a força do Senhor" Style="{StaticResource Songs}"/>
+                <Label Text="Só com esse coração eu vencerei" Style="{StaticResource Songs}"/>
+                <Label/>
+                <Label Text="Um coração de Rei" Style="{StaticResource Songs}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

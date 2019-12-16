@@ -28,6 +28,10 @@ D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Deb
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\AboutClubPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\AllUnitsPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\SongListPage.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\CoracaoDeReiPage.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\HinoAtalaiaPage.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\HinoDesbravadoresPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\TestPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\UnitListPage.xaml.g.cs
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Units\AguiasUnitPage.xaml.g.cs

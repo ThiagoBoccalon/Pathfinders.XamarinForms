@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.HinoDesbravadoresPage"
+             BackgroundColor="#262626"
+             Title="Hino De Desbravadores">
+
+    <ScrollView>
+        <StackLayout Padding="30, 40">
+            <Label Text="Nós somos os desbravadores" Style="{StaticResource Songs}"/>
+            <Label Text="O servo do Rei dos reis" Style="{StaticResource Songs}"/>
+            <Label Text="Sempre avante assim" Style="{StaticResource Songs}"/>
+            <Label Text="Marchamos fiéis às suas leis." Style="{StaticResource Songs}"/>
+            <Label Text="Devemos ao mundo anunciar" Style="{StaticResource Songs}"/>
+            <Label Text="As novas da salvação," Style="{StaticResource Songs}"/>
+            <Label Text="Que Cristo virá em breve" Style="{StaticResource Songs}"/>
+            <Label Text="Dar o galardão." Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

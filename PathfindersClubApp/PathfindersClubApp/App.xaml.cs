@@ -6,6 +6,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using PathfindersClubApp.Views.Units;
 using PathfindersClubApp.ViewModels.Units;
+using PathfindersClubApp.Views.Songs;
+using PathfindersClubApp.ViewModels.Songs;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace PathfindersClubApp
@@ -46,6 +48,10 @@ namespace PathfindersClubApp
             containerRegistry.RegisterForNavigation<AguiasUnitPage, AguiasUnitPageViewModel>();
             containerRegistry.RegisterForNavigation<CangurusUnitPage, CangurusUnitPageViewModel>();
             containerRegistry.RegisterForNavigation<FalcoesUnitPage, FalcoesUnitPageViewModel>();
+            containerRegistry.RegisterForNavigation<SongListPage, SongListPageViewModel>();
+            containerRegistry.RegisterForNavigation<CoracaoDeReiPage, CoracaoDeReiPageViewModel>();
+            containerRegistry.RegisterForNavigation<HinoAtalaiaPage, HinoAtalaiaPageViewModel>();
+            containerRegistry.RegisterForNavigation<HinoDesbravadoresPage, HinoDesbravadoresPageViewModel>();
         }
     }
 }

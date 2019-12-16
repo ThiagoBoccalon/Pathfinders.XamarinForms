@@ -24,6 +24,7 @@
                 <On Platform="Android" Value="Allan-Regular.ttf#Allan-Regular"/>
             </OnPlatform>
             <!-- Fonts Styles END -->
+            
             <!-- Units Page BEGIN -->
             <Style x:Key="IntroAntherm" TargetType="Label">
                 <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
@@ -62,6 +63,16 @@
                 <Setter Property="Padding" Value="20"/>
             </Style>
             <!-- Units Page END -->
+
+            <!-- Songs Page BEGIN -->
+            <Style x:Key="Songs" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="26"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <!-- Songs Page END -->
         </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

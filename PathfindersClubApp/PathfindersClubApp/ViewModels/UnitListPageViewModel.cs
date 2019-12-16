@@ -12,7 +12,7 @@ namespace PathfindersClubApp.ViewModels
     {
         private INavigationService _navigationService;
 
-        public List<Unit> Units { get; private set; } = new List<Unit>();
+        public List<Unit> Units { get; private set; }
         private Unit _selectedUnit { get; set; }
         public Unit SelectedUnit
         {
