@@ -13,9 +13,8 @@ namespace PathfindersClubApp.ViewModels
         private INavigationService _navigationService;
         public DelegateCommand NavigateToAboutPageCommand { get; set; }
         public DelegateCommand NavigateToUnitListPageCommand { get; set; }
-        public DelegateCommand NaviagateToTestPageCommand { get; set; }
         public DelegateCommand NavigateToSongListPageCommand { get; set; }
-
+        public DelegateCommand NavigateToDirectorsPageCommand { get; set; }
 
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
@@ -23,9 +22,9 @@ namespace PathfindersClubApp.ViewModels
             Title = "Clube Atalaia Internacional";
             _navigationService = navigationService;
             NavigateToAboutPageCommand = new DelegateCommand(ExecuteNavigateToAboutClubPage);
-            NavigateToUnitListPageCommand = new DelegateCommand(ExecuteNavigateToUnitListPage);
-            NaviagateToTestPageCommand = new DelegateCommand(ExecuteNavigateToTestPage);
-            NavigateToSongListPageCommand = new DelegateCommand(ExecuteNavigateToSongList);
+            NavigateToUnitListPageCommand = new DelegateCommand(ExecuteNavigateToUnitListPage);            
+            NavigateToSongListPageCommand = new DelegateCommand(ExecuteNavigateToSongListPage);
+            NavigateToDirectorsPageCommand = new DelegateCommand(ExecuteNavigateDirectorsPage);
         }
 
         private void ExecuteNavigateToAboutClubPage()
@@ -52,7 +51,7 @@ namespace PathfindersClubApp.ViewModels
             }            
         }
 
-        private void ExecuteNavigateToSongList()
+        private void ExecuteNavigateToSongListPage()
         {
             try
             {
@@ -64,9 +63,16 @@ namespace PathfindersClubApp.ViewModels
             }
         }
 
-        private void ExecuteNavigateToTestPage()
+        private void ExecuteNavigateDirectorsPage()
         {
-            _navigationService.NavigateAsync("TestPage");
+            try
+            {
+                _navigationService.NavigateAsync("DirectorsPage");
+            }
+            catch (Exception ex)
+            {
+                App.Current.MainPage.DisplayAlert("Error", ex.Message, "Ok");
+            }
         }
     }
 }

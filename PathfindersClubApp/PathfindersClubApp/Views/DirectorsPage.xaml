@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:custom="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin" 
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.DirectorsPage"
+             BackgroundImageSource="background_directors.png"
+             Title="Diretores">
+
+    <Page.Resources>
+        <Style x:Key="NameAndYear" TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="TextColor" Value="#03bc9d"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+    <ContentPage.Content>
+        <ScrollView Padding="20">
+            <StackLayout Spacing="50" 
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="StartAndExpand">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                        Source="director_1994_1998.png" 
+                                        BorderColor="#03bc9d"
+                                        BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Remo Diaz" 
+                               Style="{StaticResource NameAndYear}"
+                               />
+                        <Label Text="1994 - 1998" 
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+                
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>                
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_1999.png" 
+                                            BorderColor="#f63061"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Mirian Cristina" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"
+                               />
+                        <Label Text="1999" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"
+                               />
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2000_2001.png" 
+                                            BorderColor="#f63061"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Roseli Almeida" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2000 - 2001" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2002.png" 
+                                            BorderColor="#03bc9d"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Pr. Amilton L. de Melo" 
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2002" 
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2003.png" 
+                                            BorderColor="#f63061"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Daniela R. C." 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2003" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2004.png" 
+                                            BorderColor="#03bc9d"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Pr. João Cabelo" 
+                               TextColor="#03bc9d"
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2004" 
+                               TextColor="#03bc9d"
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2005.png" 
+                                            BorderColor="#03bc9d"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Ricardo Vargas" 
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2005" 
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2006_2010.png" 
+                                            BorderColor="#f63061"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Sarah Veigas" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2006 - 2010" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2011.png" 
+                                            BorderColor="#03bc9d"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Victor Baiaroski" 
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2011" 
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2015.png" 
+                                            BorderColor="#03bc9d"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Luis Ricardo" 
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2015" 
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2016_2019.png" 
+                                            BorderColor="#f63061"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Sarah Veiga" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2016 - 2019" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

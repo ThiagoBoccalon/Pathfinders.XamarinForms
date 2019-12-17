@@ -52,6 +52,7 @@ namespace PathfindersClubApp
             containerRegistry.RegisterForNavigation<CoracaoDeReiPage, CoracaoDeReiPageViewModel>();
             containerRegistry.RegisterForNavigation<HinoAtalaiaPage, HinoAtalaiaPageViewModel>();
             containerRegistry.RegisterForNavigation<HinoDesbravadoresPage, HinoDesbravadoresPageViewModel>();
+            containerRegistry.RegisterForNavigation<DirectorsPage, DirectorsPageViewModel>();
         }
     }
 }

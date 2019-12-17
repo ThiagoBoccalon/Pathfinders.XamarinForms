@@ -1676,3 +1676,15 @@ D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_1994_1998.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_1999.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2000_2001.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2002.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2003.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2004.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2005.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2006_2010.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2011.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2015.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2016_2019.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\background_directors.png
