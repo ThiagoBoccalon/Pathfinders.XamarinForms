@@ -8,17 +8,19 @@
     <Page.Resources>
         <Style x:Key="AboutText" TargetType="Label">
             <Setter Property="VerticalOptions" Value="Center"/>
-            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="TextColor" Value="Black"/>
             <Setter Property="HorizontalTextAlignment" Value="Center"/>
             <Setter Property="CharacterSpacing" Value="3"/>
             <Setter Property="LineHeight" Value="1.5"/>
+            <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>
         </Style>
         <Style x:Key="LabelTitle" TargetType="Label">
             <Setter Property="FontSize" Value="40"/>
-            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontFamily" Value="{StaticResource Caramelia}"/>
             <Setter Property="FontAttributes" Value="Bold"/>            
             <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
         </Style>
     </Page.Resources>
     <ContentPage.Content>
@@ -40,7 +42,8 @@
                        Style="{StaticResource LabelTitle}"
                        Margin="0,20,0,0"/>
                 <StackLayout x:Name="stackCamporis" 
-                             HorizontalOptions="CenterAndExpand"/>
+                             HorizontalOptions="CenterAndExpand"
+                             Padding="15"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>  

@@ -40,16 +40,16 @@ namespace PathfindersClubApp.Views
                 Setters =
                 {
                     new Setter {Property = Label.FontSizeProperty, Value = 16},
-                    new Setter{Property = Label.FontFamilyProperty, Value = "Arial" },
+                    new Setter{Property = Label.FontFamilyProperty, Value = "{StaticResource Caramelia}"},
                     new Setter{Property = Label.FontAttributesProperty, Value = FontAttributes.None},
                     new Setter{Property = Label.HorizontalTextAlignmentProperty, Value = LayoutAlignment.Center},
-                    new Setter{Property = Label.HorizontalOptionsProperty, Value = LayoutOptions.CenterAndExpand}
+                    new Setter{Property = Label.HorizontalOptionsProperty, Value = LayoutOptions.Center}
                 }
             };
             
             foreach(Campori campori in camporis)
             {
-                stackCamporis.Children.Add(new Label { Text = campori.Year, FontSize = 20, 
+                stackCamporis.Children.Add(new Label { Text = campori.Year, FontSize = 24, 
                                                         FontAttributes = FontAttributes.Bold, 
                                                         Style = labelTitle });
 
