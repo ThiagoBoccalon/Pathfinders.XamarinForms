@@ -5,6 +5,7 @@
              x:Class="PathfindersClubApp.Views.MainPage"
              Title="{Binding Title}"             
              BackgroundColor="White" 
+             BackgroundImageSource="background_main"
              NavigationPage.HasNavigationBar="False"
              >
     

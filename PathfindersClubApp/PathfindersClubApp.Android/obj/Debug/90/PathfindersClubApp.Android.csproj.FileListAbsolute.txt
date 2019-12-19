@@ -1688,3 +1688,6 @@ D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2015.png
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\director_2016_2019.png
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\background_directors.png
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\background_main_01.jpg
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\background_main_02.jpg
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res\drawable\background_main_03.jfif
