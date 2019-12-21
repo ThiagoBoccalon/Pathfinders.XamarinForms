@@ -1,4 +1,4 @@
-	/* Data SHA1: bebe7ad6c99b3ab7d397307c9b15d9fd03c6a7d7 */
+	/* Data Hash: 082F60D0B4F0262D */
 	.arch	armv8-a
 	.file	"typemap.mj.inc"
 
