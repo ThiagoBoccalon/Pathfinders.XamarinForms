@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.OhomemQueAndavaEmGalileia"
+             BackgroundColor="#262626"
+             Title="O Homem que andava em Galiléia">
+
+    <ScrollView>
+        <StackLayout Padding="30, 40">
+            <Label Text="O homem que andava em Galiléia" Style="{StaticResource Songs}"/>
+            <Label Text="Se chamava Jesus de Nazaré" Style="{StaticResource Songs}"/>
+            <Label Text="Agora está comigo transforma a minha vida" Style="{StaticResource Songs}"/>
+            <Label Text="E aumenta cada dia mais a minha fé" Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Fé mais fé, amor mais amor" Style="{StaticResource Songs}"/>
+            <Label Text="Quem não tem a peça ao Salvador" Style="{StaticResource Songs}"/>
+            <Label Text="Pois sem fé, pois sem amor" Style="{StaticResource Songs}"/>
+            <Label Text="Não posso agradar ao Senhor" Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

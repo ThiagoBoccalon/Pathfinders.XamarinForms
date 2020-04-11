@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.VouCaminhando"
+             BackgroundColor="#262626"
+             Title="Vou Caminhando">
+
+    <ScrollView>
+        <StackLayout Padding="30, 40">
+            <Label Text="Vou caminhando, sempre contente," Style="{StaticResource Songs}"/>
+            <Label Text="Pela estrada rumo ao céu." Style="{StaticResource Songs}"/>
+            <Label Text="Não tenho medo, vou confiante," Style="{StaticResource Songs}"/>
+            <Label Text="Pois Jesus comigo está." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Quando fraco estou," Style="{StaticResource Songs}"/>
+            <Label Text="Cristo da-me sua mão." Style="{StaticResource Songs}"/>
+            <Label Text="Juntos vamos assim," Style="{StaticResource Songs}"/>
+            <Label Text="Seu amor cantando." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Vou caminhando, sempre contente," Style="{StaticResource Songs}"/>
+            <Label Text="Pela estrada rumo ao céu." Style="{StaticResource Songs}"/>
+            <Label Text="Não tenho medo, vou confiante," Style="{StaticResource Songs}"/>
+            <Label Text="Pois Jesus comigo está." Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

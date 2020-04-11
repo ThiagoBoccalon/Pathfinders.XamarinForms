@@ -1081,8 +1081,6 @@ D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\PathfindersClubApp.Android.csprojAssemblyReference.cache
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
-D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\resourcepaths.cache
-D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\resourcecache.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\res.flag
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\flata\3CB1BF359138267F.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\flata\DF5916F72A79048D.stamp
@@ -1591,3 +1589,6 @@ D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\bin\Debug\com.companyname.appname.aab
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\PathfindersClubApp.Android.csproj.CoreCompileInputs.cache
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp.Android\obj\Debug\90\android\AndroidManifest.xml

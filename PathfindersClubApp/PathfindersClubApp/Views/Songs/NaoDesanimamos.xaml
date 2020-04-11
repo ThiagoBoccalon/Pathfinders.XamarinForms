@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.NaoDesanimamos"
+             BackgroundColor="#262626"
+             Title="Não Desanimamos">
+
+    <ScrollView>
+        <StackLayout Padding="30, 40">
+            <Label Text="Não, ninguém conseguiu e nem conseguirá" Style="{StaticResource Songs}"/>
+            <Label Text="Não cabe em mim, em dois ou três mundos, infinito e singular." Style="{StaticResource Songs}"/>
+            <Label Text="Não dá pra aprisionar" Style="{StaticResource Songs}"/>
+            <Label Text="A palavra tem a força que em sua excelência" Style="{StaticResource Songs}"/>
+            <Label Text="É seguridade àquele que a permitir" Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="CORO:" TextColor="WhiteSmoke"/>
+            <Label Text="Cristo, não consigo ver mais além que isso" Style="{StaticResource Songs}"/>
+            <Label Text="Nego-me a ceder" Style="{StaticResource Songs}"/>
+            <Label Text="Sei que a Tua graça é maior que eu" Style="{StaticResource Songs}"/>
+            <Label Text="Vida desmedida e ilimitada deu." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Eles pensaram que me fariam recuar" Style="{StaticResource Songs}"/>
+            <Label Text="A glória é pesada e a tribulação é leve e já vai passar." Style="{StaticResource Songs}"/>
+            <Label Text="Tudo o que acontece a mim fará com que o meu Senhor" Style="{StaticResource Songs}"/>
+            <Label Text="Seja conhecido, mais vale a Tua vida em mim do que a minha dor." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="CORO" TextColor="WhiteSmoke"/>
+            <Label/>
+            <Label Text="Somos abatido, mas não destruídos" Style="{StaticResource Songs}"/>
+            <Label Text="Ainda há boa obra, eu sei" Style="{StaticResource Songs}"/>
+            <Label Text="Seu amor é o primeiro e o último em tudo que farei." Style="{StaticResource Songs}"/>
+            <Label Text="Somos perseguidos, mas não desamparados" Style="{StaticResource Songs}"/>
+            <Label Text="Glorio-me na Sua cruz," Style="{StaticResource Songs}"/>
+            <Label Text="Esperança irrompe no sangue de Jesus" Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Cristo, não consigo ver mais além que isso" Style="{StaticResource Songs}"/>
+            <Label Text="Nego-me a ceder" Style="{StaticResource Songs}"/>
+            <Label Text="Sei que a Tua graça é maior que eu" Style="{StaticResource Songs}"/>
+            <Label Text="Vida desmedida e ilimitada deu." Style="{StaticResource Songs}"/>
+            <Label Text="Meu senhor, não dava pra alguém prever" Style="{StaticResource Songs}"/>
+            <Label Text="O inocente morre pro culpado ter" Style="{StaticResource Songs}"/>
+            <Label Text="Vida verdadeira, infinito amor" Style="{StaticResource Songs}"/>
+            <Label Text="Ver a tua face é o maior favor" Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

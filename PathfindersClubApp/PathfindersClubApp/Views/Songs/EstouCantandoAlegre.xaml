@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.EstouCantandoAlegre"
+             BackgroundColor="#262626"
+             Title="Estou Cantando Alegre">
+
+    <ScrollView>
+        <StackLayout Padding="30,40">
+            <Label Text="Estou cantando alegre no caminho da vida e da verdade, a cada passo encontro um motivo de amor e felicidade." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Mulheres:" TextColor="WhiteSmoke"/>
+            <Label Text="Estreito é o caminho e as vezes é difícil continuar. Eu vou pra frente sem temor confiando no poder do Salvador." Style="{StaticResource Songs}"/>
+            <Label Text="E ali pra sempre viverei (x3)" Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Homens:" TextColor="WhiteSmoke"/>
+            <Label Text="Sim alegr vou cantando (x3)" Style="{StaticResource Songs}"/>
+            <Label Text="Com Jesus, meu salvador pela eternidade." Style="{StaticResource Songs}"/>
+            <Label Text="Eu viverei     Eu viverei" Style="{StaticResource Songs}"/>
+            <Label Text="Eu viverei     Eu viverei" Style="{StaticResource Songs}"/>
+            <Label Text="Eu viverei" Style="{StaticResource Songs}"/>
+            <Label Text="EU VIVEIREI." Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

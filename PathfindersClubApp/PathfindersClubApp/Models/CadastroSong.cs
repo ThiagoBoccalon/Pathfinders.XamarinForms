@@ -29,14 +29,8 @@ namespace PathfindersClubApp.Models
 
             songs.Add(new Song
             {
-                Name = "Eu sou Teu",
-                Page = ""
-            });
-
-            songs.Add(new Song
-            {
-                Name = "Não Desanimamos",
-                Page = ""
+                Name = "Estou Cantando Alegre",
+                Page = "EstouCantandoAlegre"
             });
 
             songs.Add(new Song
@@ -49,6 +43,42 @@ namespace PathfindersClubApp.Models
             {
                 Name = "Hino dos Desbravadores",
                 Page = "HinoDesbravadoresPage"
+            });
+
+            songs.Add(new Song
+            {
+                Name = "Não Desanimamos",
+                Page = "NaoDesanimamos"
+            });
+
+            songs.Add(new Song
+            {
+                Name = "Não Mais Eu",
+                Page = "NaoMaisEu"
+            });
+
+            songs.Add(new Song
+            {
+                Name = "O Homem da Galileia",
+                Page = "OhomemQueAndavaEmGalileia"
+            });
+
+            songs.Add(new Song
+            {
+                Name = "Quero Acordar Cantando",
+                Page = "QueroAcordarCantando"
+            });
+
+            songs.Add(new Song
+            {
+                Name = "Sinto",
+                Page = "Sinto"
+            });
+
+            songs.Add(new Song
+            {
+                Name = "Vou Caminhando",
+                Page = "VouCaminhando"
             });
         }
     }

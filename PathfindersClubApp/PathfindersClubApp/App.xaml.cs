@@ -53,6 +53,13 @@ namespace PathfindersClubApp
             containerRegistry.RegisterForNavigation<HinoAtalaiaPage, HinoAtalaiaPageViewModel>();
             containerRegistry.RegisterForNavigation<HinoDesbravadoresPage, HinoDesbravadoresPageViewModel>();
             containerRegistry.RegisterForNavigation<DirectorsPage, DirectorsPageViewModel>();
+            containerRegistry.RegisterForNavigation<NaoDesanimamos, NaoDesanimamosViewModel>();
+            containerRegistry.RegisterForNavigation<NaoMaisEu, NaoMaisEuViewModel>();
+            containerRegistry.RegisterForNavigation<EstouCantandoAlegre, EstouCantandoAlegreViewModel>();
+            containerRegistry.RegisterForNavigation<QueroAcordarCantando, QueroAcordarCantandoViewModel>();
+            containerRegistry.RegisterForNavigation<OhomemQueAndavaEmGalileia, OhomemQueAndavaEmGalileiaViewModel>();
+            containerRegistry.RegisterForNavigation<VouCaminhando, VouCaminhandoViewModel>();
+            containerRegistry.RegisterForNavigation<Sinto, SintoViewModel>();
         }
     }
 }

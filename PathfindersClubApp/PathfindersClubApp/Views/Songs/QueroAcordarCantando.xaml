@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.QueroAcordarCantando"
+             BackgroundColor="#262626"
+             Title="Quero Acordar Cantando">
+
+    <ScrollView>
+        <StackLayout Padding="30,40">
+            <Label Text="A trizteza pode durar, até o amanhecer." Style="{StaticResource Songs}"/>
+            <Label Text="Mas a alegria chega ao alvorecer." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Quero acordar cantando" Style="{StaticResource Songs}"/>
+            <Label Text="Quero acordar cantando" Style="{StaticResource Songs}"/>
+            <Label Text="Quero acordar cantando" Style="{StaticResource Songs}"/>
+            <Label Text="E louvando ao Salvador." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Quero acordar cantando" Style="{StaticResource Songs}"/>
+            <Label Text="Quero acordar cantando" Style="{StaticResource Songs}"/>
+            <Label Text="Quero acordar cantando" Style="{StaticResource Songs}"/>
+            <Label Text="E louvando ao Salvador." Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

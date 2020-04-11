@@ -47,3 +47,11 @@ D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Deb
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.dll
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.pdb
 D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.csprojAssemblyReference.cache
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\EstouCantandoAlegre.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\NaoDesanimamos.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\NaoMaisEu.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\OhomemQueAndavaEmGalileia.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\QueroAcordarCantando.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\Sinto.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\Views\Songs\VouCaminhando.xaml.g.cs
+D:\GitHub\Pathfinders.XamarinForms\PathfindersClubApp\PathfindersClubApp\obj\Debug\netstandard2.0\PathfindersClubApp.csproj.CoreCompileInputs.cache

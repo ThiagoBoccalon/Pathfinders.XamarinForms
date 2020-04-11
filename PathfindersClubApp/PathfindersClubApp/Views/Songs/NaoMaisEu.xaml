@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.NaoMaisEu"
+             BackgroundColor="#262626"
+             Title="Não Mais Eu">
+
+    <ScrollView>
+        <StackLayout Padding="30, 40">
+            <Label Text="Foi na cruz, foi na cruz em que ao fim percebi meu pecado recaiu em Jesus." Style="{StaticResource Songs}"/>
+            <Label Text="Foi então pela fé, que meus olhos abri que prazer sinto agora em sua luz." Style="{StaticResource Songs}"/>
+            <Label Text="Eu irei par a cruz onde pude perceber esse amor que por mim foi pago." Style="{StaticResource Songs}"/>
+            <Label Text="Sua mão me curou sua morte me salvou eu irei, eu irei para a cruz." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Quão perdido estou quão vazio o coração não sou digno de tanto amor." Style="{StaticResource Songs}"/>
+            <Label Text="Foi então, pela fé que meus olhos abri, que prazer sinto agora em sua luz." Style="{StaticResource Songs}"/>
+            <Label Text="Eu irei par a cruz onde pude perceber esse amor que por mim foi pago." Style="{StaticResource Songs}"/>
+            <Label Text="Sua mão me curou sua morte me salvou eu irei, eu irei para a cruz." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Não mais eu, não mais eu é Jesus que vive em mim" Style="{StaticResource Songs}"/>
+            <Label Text="Cristo vive em mim," Style="{StaticResource Songs}"/>
+            <Label Text="Cristo vive em mim." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Eu irei par a cruz onde pude perceber esse amor que por mim foi pago." Style="{StaticResource Songs}"/>
+            <Label Text="Sua mão me curou sua morte me salvou eu irei, eu irei para a cruz." Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

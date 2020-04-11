@@ -1,3 +1,4 @@
+IsIncrementalBuild=false
 AndroidUseAapt2=True
 UseSharedRuntime=true
 UseFastDeployment=false
@@ -18,8 +19,10 @@ FastDeploymentType=Assemblies
 TargetFramework=v9.0
 ClassParser=
 CodegenTarget=
-AndroidDexTool=dx
+AndroidDexTool=d8
 AndroidLinkTool=
 AndroidEnableProfiledAot=
+AndroidInstallAfterBuild=True
+AndroidSessionId=a9e3ab9e-0514-4cc8-96ca-7719428732b8
 BuildConfiguration=Debug
 TemplateName=

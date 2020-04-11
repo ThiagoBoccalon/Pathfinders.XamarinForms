@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.Songs.Sinto"
+             BackgroundColor="#262626"
+             Title="Sinto">
+
+    <ScrollView>
+        <StackLayout Padding="30, 40">
+            <Label Text="Sinto vontade imensa de voar no firmamento, gritar ao mundo inteiro o que estou sentido. Que já encontrei meu Salvador, minha vontade é Jesus e nunca eu me cansarei de repetir até o fim." Style="{StaticResource Songs}" HorizontalTextAlignment="Center"/>
+            <Label/>
+            <Label Text="CORO:" TextColor="White"/>
+            <Label Text="Que agora eu, tenho um novo amor. Jamais imaginei pode achar, alguém que deu me a vida uma razão para amar. Jesus amor e mais que amor minha doce paz." Style="{StaticResource Songs}"/>
+            <Label/>
+            <Label Text="Amo sua meiga voz em resposta quando chamo, os lábios ternos e os toques de suas mãos. Que já encontrei meu Salvador, minha vontade é Jesus e nunca eu me cansarei de repetir até o fim." Style="{StaticResource Songs}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
