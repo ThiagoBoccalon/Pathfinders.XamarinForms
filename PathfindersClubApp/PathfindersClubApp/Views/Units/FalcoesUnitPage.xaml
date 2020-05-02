@@ -26,7 +26,7 @@
             </StackLayout>
             <StackLayout Style="{StaticResource StackConselheiro}">
                 <custom:CircleImage Source="conselheiro_falcoes.jpg" Style="{StaticResource ImageConselheiro}"/>
-                <Label Text="Conselheiro: Nathan Almeida" Style="{StaticResource NameConselheiro}"/>                
+                <Label Text="Conselheiro: Lucas Dunga" Style="{StaticResource NameConselheiro}"/>                
             </StackLayout>
         </StackLayout>
     </ScrollView>

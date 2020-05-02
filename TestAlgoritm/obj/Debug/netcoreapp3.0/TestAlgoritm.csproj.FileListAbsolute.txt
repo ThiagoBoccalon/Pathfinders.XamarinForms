@@ -5,7 +5,9 @@ D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\bin\Debug\netcoreapp3.0\TestAlgo
 D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\bin\Debug\netcoreapp3.0\TestAlgoritm.dll
 D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\bin\Debug\netcoreapp3.0\TestAlgoritm.pdb
 D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\obj\Debug\netcoreapp3.0\TestAlgoritm.csprojAssemblyReference.cache
+D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\obj\Debug\netcoreapp3.0\TestAlgoritm.csproj.CoreCompileInputs.cache
 D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\obj\Debug\netcoreapp3.0\TestAlgoritm.AssemblyInfoInputs.cache
 D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\obj\Debug\netcoreapp3.0\TestAlgoritm.AssemblyInfo.cs
 D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\obj\Debug\netcoreapp3.0\TestAlgoritm.dll
 D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\obj\Debug\netcoreapp3.0\TestAlgoritm.pdb
+D:\GitHub\Pathfinders.XamarinForms\TestAlgoritm\obj\Debug\netcoreapp3.0\TestAlgoritm.genruntimeconfig.cache

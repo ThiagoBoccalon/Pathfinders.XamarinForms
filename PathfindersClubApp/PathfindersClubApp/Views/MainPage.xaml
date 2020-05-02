@@ -73,7 +73,8 @@
                 <Frame>
                     <Grid>
                         <ImageButton BackgroundColor="#ecc021"                        
-                            Source="main_calendar.png"/>
+                            Source="main_calendar.png"
+                            Command="{Binding NavigateToCalendarPageCommand}"/>
                         <Label Text="Agenda"/>
                     </Grid>
                 </Frame>

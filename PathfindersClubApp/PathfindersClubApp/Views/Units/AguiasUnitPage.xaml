@@ -22,7 +22,7 @@
             </StackLayout>
             <StackLayout Style="{StaticResource StackConselheiro}">
                 <custom:CircleImage Source="conselheira_aguias.jpg" Style="{StaticResource ImageConselheiro}"/>
-                <Label Text="Conselheira: Débora Mascarenhas" Style="{StaticResource NameConselheiro}"/>                
+                <Label Text="Conselheira: Mila Mandarino" Style="{StaticResource NameConselheiro}"/>                
             </StackLayout>
 
         </StackLayout>

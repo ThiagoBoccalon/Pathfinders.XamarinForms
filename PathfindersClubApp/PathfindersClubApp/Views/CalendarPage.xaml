@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PathfindersClubApp.Views.CalendarPage">
+
+    <StackLayout>
+        <ListView > 
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" 
+                                     BackgroundColor="{Binding ColorBackground}"                                     
+                                     >
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="140"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="80"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Label Text="{Binding TitleCalendar}"/>
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <Image Source="{Binding ImageDescriptionCalendar}"/>
+                                </Grid>
+                                <Grid Grid.Row="2">
+                                    <Label Text="{Binding DateCalendar}"/>
+                                </Grid>
+                                <Grid Grid.Row="3">
+                                    <Label Text="{Binding TextDescriptionCalendar}"/>
+                                </Grid>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    
+    
+  
+</ContentPage>

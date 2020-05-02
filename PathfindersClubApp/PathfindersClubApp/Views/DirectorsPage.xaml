@@ -257,6 +257,28 @@
                     </StackLayout>
                 </Grid>
 
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <custom:CircleImage Grid.Column="1"
+                                            Source="director_2020.png" 
+                                            BorderColor="#f63061"
+                                            BorderThickness="2"/>
+                    <StackLayout Grid.Column="2"
+                                 VerticalOptions="CenterAndExpand"
+                                 HorizontalOptions="CenterAndExpand">
+                        <Label Text="Mirian Cristina" 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                        <Label Text="2020 - " 
+                               TextColor="#f63061"
+                               Style="{StaticResource NameAndYear}"/>
+                    </StackLayout>
+                </Grid>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

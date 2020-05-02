@@ -2,19 +2,22 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Microsoft.CodeAnalysis.Analyzers/2.6.2-beta2": {
-        "type": "package"
+      "Microsoft.CodeAnalysis.Analyzers/3.0.0-beta2.20059.3": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
       },
-      "Microsoft.CodeAnalysis.Common/3.1.0": {
+      "Microsoft.CodeAnalysis.Common/3.5.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "2.6.2-beta2",
+          "Microsoft.CodeAnalysis.Analyzers": "3.0.0-beta2.20059.3",
           "System.Collections.Immutable": "1.5.0",
-          "System.Memory": "4.5.2",
+          "System.Memory": "4.5.3",
           "System.Reflection.Metadata": "1.6.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
           "System.Text.Encoding.CodePages": "4.5.1",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "System.Threading.Tasks.Extensions": "4.5.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.dll": {}
@@ -64,10 +67,10 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp/3.1.0": {
+      "Microsoft.CodeAnalysis.CSharp/3.5.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "[3.1.0]"
+          "Microsoft.CodeAnalysis.Common": "[3.5.0]"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll": {}
@@ -141,7 +144,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Prism.Core/7.2.0.1367": {
+      "Prism.Core/7.2.0.1422": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Prism.dll": {}
@@ -150,10 +153,10 @@
           "lib/netstandard2.0/Prism.dll": {}
         }
       },
-      "Prism.Forms/7.2.0.1367": {
+      "Prism.Forms/7.2.0.1422": {
         "type": "package",
         "dependencies": {
-          "Prism.Core": "7.2.0.1367",
+          "Prism.Core": "7.2.0.1422",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -163,11 +166,11 @@
           "lib/netstandard2.0/Prism.Forms.dll": {}
         }
       },
-      "Prism.Unity.Forms/7.2.0.1367": {
+      "Prism.Unity.Forms/7.2.0.1422": {
         "type": "package",
         "dependencies": {
-          "Prism.Forms": "7.2.0.1367",
-          "Unity.Container": "5.10.3"
+          "Prism.Forms": "7.2.0.1422",
+          "Unity.Container": "5.11.1"
         },
         "compile": {
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
@@ -234,7 +237,7 @@
           "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         }
       },
-      "System.Memory/4.5.2": {
+      "System.Memory/4.5.3": {
         "type": "package",
         "dependencies": {
           "System.Buffers": "4.4.0",
@@ -269,7 +272,7 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -296,7 +299,7 @@
           }
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.2": {
+      "System.Threading.Tasks.Extensions/4.5.3": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
@@ -308,8 +311,11 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "Unity.Abstractions/4.1.3": {
+      "Unity.Abstractions/5.11.1": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
         "compile": {
           "lib/netstandard2.0/Unity.Abstractions.dll": {}
         },
@@ -317,11 +323,11 @@
           "lib/netstandard2.0/Unity.Abstractions.dll": {}
         }
       },
-      "Unity.Container/5.10.3": {
+      "Unity.Container/5.11.1": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.2",
-          "Unity.Abstractions": "4.1.3"
+          "Unity.Abstractions": "5.11.1"
         },
         "compile": {
           "lib/netstandard2.0/Unity.Container.dll": {}
@@ -342,7 +348,7 @@
           "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.5.0.617": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -355,14 +361,14 @@
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.HotReload/1.5.3": {
+      "Xamarin.HotReload/2.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "3.1.0",
+          "Microsoft.CodeAnalysis.CSharp": "3.5.0",
           "Xamarin.Forms": "3.0.0"
         },
         "compile": {
@@ -375,26 +381,82 @@
     }
   },
   "libraries": {
-    "Microsoft.CodeAnalysis.Analyzers/2.6.2-beta2": {
-      "sha512": "rg5Ql73AmGCMG5Q40Kzbndq7C7S4XvsJA+2QXfZBCy2dRqD+a7BSbx/3942EoRUJ/8Wh9+kLg2G2qC46o3f1Aw==",
+    "Microsoft.CodeAnalysis.Analyzers/3.0.0-beta2.20059.3": {
+      "sha512": "Ve2kXanMNVZp1cIoKbflh3RcQgOYLC4UZ23YIMkOnkA6hQjpXsg9NnXbziR2m4i6+WGSz9Wbxp+Tj7XdNRiITw==",
       "type": "package",
-      "path": "microsoft.codeanalysis.analyzers/2.6.2-beta2",
+      "path": "microsoft.codeanalysis.analyzers/3.0.0-beta2.20059.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "EULA.rtf",
         "ThirdPartyNotices.rtf",
         "analyzers/dotnet/cs/Microsoft.CodeAnalysis.Analyzers.dll",
         "analyzers/dotnet/cs/Microsoft.CodeAnalysis.CSharp.Analyzers.dll",
+        "analyzers/dotnet/cs/cs/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/de/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/es/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/fr/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/it/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ja/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ko/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pl/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ru/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/tr/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/zh-Hans/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/zh-Hant/Microsoft.CodeAnalysis.Analyzers.resources.dll",
         "analyzers/dotnet/vb/Microsoft.CodeAnalysis.Analyzers.dll",
         "analyzers/dotnet/vb/Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll",
-        "microsoft.codeanalysis.analyzers.2.6.2-beta2.nupkg.sha512",
+        "analyzers/dotnet/vb/cs/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/de/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/es/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/fr/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/it/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/ja/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/ko/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/pl/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/pt-BR/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/ru/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/tr/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/zh-Hans/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/zh-Hant/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "build/Microsoft.CodeAnalysis.Analyzers.props",
+        "documentation/Analyzer Configuration.md",
+        "documentation/Microsoft.CodeAnalysis.Analyzers.md",
+        "documentation/Microsoft.CodeAnalysis.Analyzers.sarif",
+        "editorconfig/AllRulesDefault/.editorconfig",
+        "editorconfig/AllRulesDisabled/.editorconfig",
+        "editorconfig/AllRulesEnabled/.editorconfig",
+        "editorconfig/CorrectnessRulesDefault/.editorconfig",
+        "editorconfig/CorrectnessRulesEnabled/.editorconfig",
+        "editorconfig/DataflowRulesDefault/.editorconfig",
+        "editorconfig/DataflowRulesEnabled/.editorconfig",
+        "editorconfig/LibraryRulesDefault/.editorconfig",
+        "editorconfig/LibraryRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisCompatibilityRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisCompatibilityRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisCorrectnessRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisCorrectnessRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisDesignRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisDesignRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisDocumentationRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisDocumentationRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisLocalizationRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisLocalizationRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisPerformanceRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisPerformanceRulesEnabled/.editorconfig",
+        "editorconfig/PortedFromFxCopRulesDefault/.editorconfig",
+        "editorconfig/PortedFromFxCopRulesEnabled/.editorconfig",
+        "microsoft.codeanalysis.analyzers.3.0.0-beta2.20059.3.nupkg.sha512",
         "microsoft.codeanalysis.analyzers.nuspec",
         "rulesets/AllRulesDefault.ruleset",
         "rulesets/AllRulesDisabled.ruleset",
         "rulesets/AllRulesEnabled.ruleset",
         "rulesets/CorrectnessRulesDefault.ruleset",
         "rulesets/CorrectnessRulesEnabled.ruleset",
+        "rulesets/DataflowRulesDefault.ruleset",
+        "rulesets/DataflowRulesEnabled.ruleset",
         "rulesets/LibraryRulesDefault.ruleset",
         "rulesets/LibraryRulesEnabled.ruleset",
         "rulesets/MicrosoftCodeAnalysisCompatibilityRulesDefault.ruleset",
@@ -409,17 +471,20 @@
         "rulesets/MicrosoftCodeAnalysisLocalizationRulesEnabled.ruleset",
         "rulesets/MicrosoftCodeAnalysisPerformanceRulesDefault.ruleset",
         "rulesets/MicrosoftCodeAnalysisPerformanceRulesEnabled.ruleset",
+        "rulesets/PortedFromFxCopRulesDefault.ruleset",
+        "rulesets/PortedFromFxCopRulesEnabled.ruleset",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.CodeAnalysis.Common/3.1.0": {
-      "sha512": "G86i5RfF/dUyn/xA4P5Y3+G6srLX+3YBGoDBVzP8J+z/Wm17i1HHY9VpOMXJaR7GRz+rhKsy4fJnbSz4JtdE6g==",
+    "Microsoft.CodeAnalysis.Common/3.5.0": {
+      "sha512": "1CjUHyDxhlwDfUSTOwqbNMZ4rk/Pqs33BupWmun8S/DUOou9mDe+MjapK06WjvuhIEyEr3fzyk0bOIwu0n1RYg==",
       "type": "package",
-      "path": "microsoft.codeanalysis.common/3.1.0",
+      "path": "microsoft.codeanalysis.common/3.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "ThirdPartyNotices.rtf",
         "lib/netstandard2.0/Microsoft.CodeAnalysis.dll",
         "lib/netstandard2.0/Microsoft.CodeAnalysis.pdb",
@@ -437,17 +502,18 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
-        "microsoft.codeanalysis.common.3.1.0.nupkg.sha512",
+        "microsoft.codeanalysis.common.3.5.0.nupkg.sha512",
         "microsoft.codeanalysis.common.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.CSharp/3.1.0": {
-      "sha512": "XA4igWS2ZMkfWV+kBe5ekLj14svm1ekx3Nw3Rrf9FA/vt7dKljUDcS02HPieHeSWVYnKKashQKkpWyr8xrdHSA==",
+    "Microsoft.CodeAnalysis.CSharp/3.5.0": {
+      "sha512": "WSMCz5tAtnmEzgmE20J1tjX7chU9HYDfz8AHmWn4Ek+6PPvPZSoo0GDo4Pbnu1FAf4MnNDN6lMd4nqNPuI9V2A==",
       "type": "package",
-      "path": "microsoft.codeanalysis.csharp/3.1.0",
+      "path": "microsoft.codeanalysis.csharp/3.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "ThirdPartyNotices.rtf",
         "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.pdb",
@@ -465,7 +531,7 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "microsoft.codeanalysis.csharp.3.1.0.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.3.5.0.nupkg.sha512",
         "microsoft.codeanalysis.csharp.nuspec"
       ]
     },
@@ -611,10 +677,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Prism.Core/7.2.0.1367": {
-      "sha512": "vrz2M/Hr9ItcAUvnT+n76ak6qPQMgJfyTYFSKqphveb9ibohm70vzc0cWu1jkeBY5XPS9RbUluXMa9WQGM0kPw==",
+    "Prism.Core/7.2.0.1422": {
+      "sha512": "U6tZ4Iq+ELyK5PedRC6E20caZXXTmTYiw5evpv0M3WcfKgih9H5G5LDBlDl+65eC5Vb4lnOaUCAtckdEl2MRxA==",
       "type": "package",
-      "path": "prism.core/7.2.0.1367",
+      "path": "prism.core/7.2.0.1422",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -625,17 +691,16 @@
         "lib/netcoreapp3.0/Prism.pdb",
         "lib/netcoreapp3.0/Prism.xml",
         "lib/netstandard2.0/Prism.dll",
-        "lib/netstandard2.0/Prism.dll.mdb",
         "lib/netstandard2.0/Prism.pdb",
         "lib/netstandard2.0/Prism.xml",
-        "prism.core.7.2.0.1367.nupkg.sha512",
+        "prism.core.7.2.0.1422.nupkg.sha512",
         "prism.core.nuspec"
       ]
     },
-    "Prism.Forms/7.2.0.1367": {
-      "sha512": "zvYucENJ1HuArZU3sPSrwQobqoH80G4JcARMofl1MYpx3XJ4AZbS9DFNEF1taLCCpgsbsjWCARV190McDftFsg==",
+    "Prism.Forms/7.2.0.1422": {
+      "sha512": "wrSjIoSp2o8W0JdHx1f5K7pM48lSA2yraQ+QRjl5PLRPs5FhzMwhOA2G1YoD0mhE1WzwzJoBBMnDfDaoFudmyQ==",
       "type": "package",
-      "path": "prism.forms/7.2.0.1367",
+      "path": "prism.forms/7.2.0.1422",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -645,21 +710,21 @@
         "lib/netstandard2.0/Prism.Forms.dll",
         "lib/netstandard2.0/Prism.Forms.pdb",
         "lib/netstandard2.0/Prism.Forms.xml",
-        "prism.forms.7.2.0.1367.nupkg.sha512",
+        "prism.forms.7.2.0.1422.nupkg.sha512",
         "prism.forms.nuspec"
       ]
     },
-    "Prism.Unity.Forms/7.2.0.1367": {
-      "sha512": "HG15TVwDDyTM0Zhd9sk/sFoQUqXr/oWNNa9jc8tgTPcDwnJE91L5tcVL5KozerlO/Kp/gyvr735j74TcBCrERA==",
+    "Prism.Unity.Forms/7.2.0.1422": {
+      "sha512": "BZBAgGsMuq1LTfu6fAJiF5vMmcd5Vw+AefQhA53nWdp+MAU/U5NOlftSI8IbvgCvzDaKcfbEoibZcQo86JM9Pw==",
       "type": "package",
-      "path": "prism.unity.forms/7.2.0.1367",
+      "path": "prism.unity.forms/7.2.0.1422",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Prism.Unity.Forms.dll",
         "lib/netstandard2.0/Prism.Unity.Forms.pdb",
         "lib/netstandard2.0/Prism.Unity.Forms.xml",
-        "prism.unity.forms.7.2.0.1367.nupkg.sha512",
+        "prism.unity.forms.7.2.0.1422.nupkg.sha512",
         "prism.unity.forms.nuspec"
       ]
     },
@@ -800,10 +865,10 @@
         "version.txt"
       ]
     },
-    "System.Memory/4.5.2": {
-      "sha512": "fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "type": "package",
-      "path": "system.memory/4.5.2",
+      "path": "system.memory/4.5.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -815,7 +880,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.2.nupkg.sha512",
+        "system.memory.4.5.3.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -885,10 +950,10 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "sha512": "HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -904,7 +969,7 @@
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -945,10 +1010,10 @@
         "version.txt"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.2": {
-      "sha512": "BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+    "System.Threading.Tasks.Extensions/4.5.3": {
+      "sha512": "+MvhNtcvIbqmhANyKu91jQnvIRVSTiaOiFNfKWwXGHG48YAb4I/TyH8spsySiPYla7gKal5ZnF3teJqZAximyQ==",
       "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.2",
+      "path": "system.threading.tasks.extensions/4.5.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -974,16 +1039,16 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+        "system.threading.tasks.extensions.4.5.3.nupkg.sha512",
         "system.threading.tasks.extensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
     },
-    "Unity.Abstractions/4.1.3": {
-      "sha512": "Yar2QRlViMGI4Jeyr8qyjb02RvpBW15TOt//eMzESn3VO70v/tPj7XfKDvMnqC3QqFPkK4/7VeuK1mN9DexEiw==",
+    "Unity.Abstractions/5.11.1": {
+      "sha512": "R5qJ8KSN2mptSqCG4SHBBs2PcRvo113uu18cNCbcx1nkezYGZnYBNadLPtDODE5KFLQBqLdW9XlaalxU275Qgg==",
       "type": "package",
-      "path": "unity.abstractions/4.1.3",
+      "path": "unity.abstractions/5.11.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1003,14 +1068,14 @@
         "lib/netstandard1.0/Unity.Abstractions.pdb",
         "lib/netstandard2.0/Unity.Abstractions.dll",
         "lib/netstandard2.0/Unity.Abstractions.pdb",
-        "unity.abstractions.4.1.3.nupkg.sha512",
+        "unity.abstractions.5.11.1.nupkg.sha512",
         "unity.abstractions.nuspec"
       ]
     },
-    "Unity.Container/5.10.3": {
-      "sha512": "JA18YN+6e60vEOBmrU+Rd3rJaTyRsxD1s4w66moS1BF8BEPw8jt6GjYFKo/SDUdGmbvTfJp/yThETy5nNkmJrg==",
+    "Unity.Container/5.11.1": {
+      "sha512": "pxeataMa9MB/ilLNcmy5OUrcvA2OnPMuMCTsw+zGgRPWx1oxkq6ap5bI+59htjAPe9awPDIU3YVk+yH0sfcOWQ==",
       "type": "package",
-      "path": "unity.container/5.10.3",
+      "path": "unity.container/5.11.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1030,7 +1095,7 @@
         "lib/netstandard1.0/Unity.Container.pdb",
         "lib/netstandard2.0/Unity.Container.dll",
         "lib/netstandard2.0/Unity.Container.pdb",
-        "unity.container.5.10.3.nupkg.sha512",
+        "unity.container.5.11.1.nupkg.sha512",
         "unity.container.nuspec"
       ]
     },
@@ -1056,14 +1121,20 @@
         "xam.plugins.forms.imagecircle.nuspec"
       ]
     },
-    "Xamarin.Forms/4.3.0.991211": {
-      "sha512": "cWbxRKy6oPbFvpw2K6Du3bSo34LDyVKYSR6jCDSbB3Ieyj6549bWQbBLUEptRGQQ8fhDTcJQ/ezqwGwxd+7bkg==",
+    "Xamarin.Forms/4.5.0.617": {
+      "sha512": "tB/h7bHEylOgNT+521SRnbmO+LCe5R3lPboD/icCMpa+FdjmxhZQ7+fIIPFDbhY2dqYetGRnAeJWXVx4NLbmAw==",
       "type": "package",
-      "path": "xamarin.forms/4.3.0.991211",
+      "path": "xamarin.forms/4.5.0.617",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/MonoAndroid10/proguard.cfg",
+        "build/XCODE10/Xamarin.Forms.Platform.iOS.dll",
+        "build/XCODE10/Xamarin.Forms.Platform.iOS.pdb",
+        "build/XCODE10/Xamarin.Forms.Platform.macOS.dll",
+        "build/XCODE11/Xamarin.Forms.Platform.iOS.dll",
+        "build/XCODE11/Xamarin.Forms.Platform.iOS.pdb",
+        "build/XCODE11/Xamarin.Forms.Platform.macOS.dll",
         "build/Xamarin.Forms.DefaultItems.props",
         "build/Xamarin.Forms.DefaultItems.targets",
         "build/Xamarin.Forms.props",
@@ -1084,39 +1155,66 @@
         "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
         "build/netstandard2.0/Xamarin.Forms.Core.dll",
         "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid81/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/MonoAndroid81/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/MonoAndroid81/FormsViewGroup.dll",
-        "lib/MonoAndroid81/FormsViewGroup.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/de/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/de/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/es/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/es/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/fr/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/fr/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/it/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/it/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/ja/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/ja/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/ko/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/ko/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/pt-br/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/pt-br/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/ru/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/ru/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/zh-Hans/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/zh-Hans/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid81/zh-Hant/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/zh-Hant/Xamarin.Forms.Xaml.xml",
+        "buildTransitive/MonoAndroid10/proguard.cfg",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.iOS.dll",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.iOS.pdb",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.macOS.dll",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.iOS.dll",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.iOS.pdb",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.macOS.dll",
+        "buildTransitive/Xamarin.Forms.DefaultItems.props",
+        "buildTransitive/Xamarin.Forms.DefaultItems.targets",
+        "buildTransitive/Xamarin.Forms.props",
+        "buildTransitive/Xamarin.Forms.targets",
+        "buildTransitive/net46/Mono.Cecil.Mdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Pdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Rocks.dll",
+        "buildTransitive/net46/Mono.Cecil.dll",
+        "buildTransitive/net46/System.ValueTuple.dll",
+        "buildTransitive/net46/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/net46/Xamarin.Forms.Core.dll",
+        "buildTransitive/net46/Xamarin.Forms.Xaml.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.dll",
+        "buildTransitive/netstandard2.0/System.CodeDom.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Core.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/de/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/de/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/es/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/es/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/fr/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/fr/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/it/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/it/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ja/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ja/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ko/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ko/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/pt-br/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ru/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ru/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/zh-Hans/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/zh-Hant/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid90/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid90/FormsViewGroup.dll",
@@ -1154,7 +1252,6 @@
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Platform.dll",
-        "lib/Xamarin.Mac/Xamarin.Forms.Platform.macOS.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
@@ -1162,8 +1259,6 @@
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
-        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
-        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
@@ -1270,45 +1365,78 @@
         "lib/tizen40/Xamarin.Forms.Xaml.dll",
         "lib/tizen40/Xamarin.Forms.Xaml.pdb",
         "lib/tizen40/Xamarin.Forms.Xaml.xml",
-        "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/uap10.0/Xamarin.Forms.Core.dll",
-        "lib/uap10.0/Xamarin.Forms.Core.pdb",
-        "lib/uap10.0/Xamarin.Forms.Core.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PickerStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.dll",
-        "lib/uap10.0/Xamarin.Forms.Xaml.dll",
-        "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
-        "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.3.0.991211.nupkg.sha512",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.14393/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.16299/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
+        "xamarin.forms.4.5.0.617.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.HotReload/1.5.3": {
-      "sha512": "/V81jWP9mkb7aW72viTpya0Hi+N1xeYVdR4wCykDjKqtNASSB2YK9ymoSRQUGQAtxzcng6KMSz+Zp2SwHzzZhA==",
+    "Xamarin.HotReload/2.0.7": {
+      "sha512": "J/bs5hE4WnAsrtrV/cL/BHHk53fi3k6QiVywbdKzyIhjUmb5QdlIbYLJxtBxSdnjDIJl8h0yXkwKJkLmhOtXmA==",
       "type": "package",
-      "path": "xamarin.hotreload/1.5.3",
+      "path": "xamarin.hotreload/2.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1318,7 +1446,7 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.HotReload.Reloader.deps.json",
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.HotReload.Reloader.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Xamarin.Forms.HotReload.Reloader.pdb",
-        "xamarin.hotreload.1.5.3.nupkg.sha512",
+        "xamarin.hotreload.2.0.7.nupkg.sha512",
         "xamarin.hotreload.nuspec"
       ]
     }
@@ -1326,10 +1454,10 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "Prism.Unity.Forms >= 7.2.0.1367",
+      "Prism.Unity.Forms >= 7.2.0.1422",
       "Xam.Plugins.Forms.ImageCircle >= 3.0.0.5",
-      "Xamarin.Forms >= 4.3.0.991211",
-      "Xamarin.HotReload >= 1.5.3",
+      "Xamarin.Forms >= 4.5.0.617",
+      "Xamarin.HotReload >= 2.0.7",
       "sqlite-net-pcl >= 1.6.292"
     ]
   },
@@ -1383,7 +1511,7 @@
           },
           "Prism.Unity.Forms": {
             "target": "Package",
-            "version": "[7.2.0.1367, )"
+            "version": "[7.2.0.1422, )"
           },
           "Xam.Plugins.Forms.ImageCircle": {
             "target": "Package",
@@ -1391,11 +1519,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.3.0.991211, )"
+            "version": "[4.5.0.617, )"
           },
           "Xamarin.HotReload": {
             "target": "Package",
-            "version": "[1.5.3, )"
+            "version": "[2.0.7, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

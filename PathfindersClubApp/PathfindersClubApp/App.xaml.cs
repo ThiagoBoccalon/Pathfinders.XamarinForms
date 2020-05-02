@@ -60,6 +60,7 @@ namespace PathfindersClubApp
             containerRegistry.RegisterForNavigation<OhomemQueAndavaEmGalileia, OhomemQueAndavaEmGalileiaViewModel>();
             containerRegistry.RegisterForNavigation<VouCaminhando, VouCaminhandoViewModel>();
             containerRegistry.RegisterForNavigation<Sinto, SintoViewModel>();
+            containerRegistry.RegisterForNavigation<CalendarPage, CalendarPageViewModel>();
         }
     }
 }

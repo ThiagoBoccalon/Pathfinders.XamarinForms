@@ -15,6 +15,7 @@ namespace PathfindersClubApp.ViewModels
         public DelegateCommand NavigateToUnitListPageCommand { get; set; }
         public DelegateCommand NavigateToSongListPageCommand { get; set; }
         public DelegateCommand NavigateToDirectorsPageCommand { get; set; }
+        public DelegateCommand NavigateToCalendarPageCommand { get; set; }
 
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
@@ -24,7 +25,8 @@ namespace PathfindersClubApp.ViewModels
             NavigateToAboutPageCommand = new DelegateCommand(ExecuteNavigateToAboutClubPage);
             NavigateToUnitListPageCommand = new DelegateCommand(ExecuteNavigateToUnitListPage);            
             NavigateToSongListPageCommand = new DelegateCommand(ExecuteNavigateToSongListPage);
-            NavigateToDirectorsPageCommand = new DelegateCommand(ExecuteNavigateDirectorsPage);
+            NavigateToDirectorsPageCommand = new DelegateCommand(ExecuteNavigateToDirectorsPage);
+            NavigateToCalendarPageCommand = new DelegateCommand(ExecuteNavigateToCalendarPage);
         }
 
         private void ExecuteNavigateToAboutClubPage()
@@ -63,11 +65,23 @@ namespace PathfindersClubApp.ViewModels
             }
         }
 
-        private void ExecuteNavigateDirectorsPage()
+        private void ExecuteNavigateToDirectorsPage()
         {
             try
             {
                 _navigationService.NavigateAsync("DirectorsPage");
+            }
+            catch (Exception ex)
+            {
+                App.Current.MainPage.DisplayAlert("Error", ex.Message, "Ok");
+            }
+        }
+
+        private void ExecuteNavigateToCalendarPage()
+        {
+            try
+            {
+                _navigationService.NavigateAsync("CalendarPage");
             }
             catch (Exception ex)
             {
